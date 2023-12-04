@@ -1,8 +1,8 @@
 {
-  "name": "Liga-A-accelerator-template",
+  "name": "travel-accelerator",
   "version": "2.0.0",
   "type": "module",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Второй проект в рамках акселератора",
   "browserslist": [
     "last 3 versions",
     "IE 11",
