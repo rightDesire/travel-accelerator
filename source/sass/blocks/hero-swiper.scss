@@ -1,0 +1,25 @@
+.hero-swiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  @include vp-tablet {
+    position: static;
+    transform: translateY(-1px); // Устраняет зазор
+  }
+}
+
+.hero-swiper__pagination {
+  position: absolute;
+  bottom: 80px;
+  right: 120px;
+  transform: translateY(-50%);
+
+  @include vp-tablet {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translateY(-50%) translateX(50%);
+  }
+}

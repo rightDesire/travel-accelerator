@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Организация походов в горы">
+    <meta name="description" content="Второй проект в рамках акселератора">
     <title>LIFETOUR</title>
     <link rel="stylesheet" href="css/style.min.css">
     <!-- favicon -->
@@ -14,12 +14,12 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
+    <h1 class="visually-hidden">Организация походов в горы LIFETOUR.</h1>
     <div class="wrapper">
-      <header class="header header--sticky" data-header="sticky" data-hide-point="50">
+      <header class="header" data-header="">
         <div class="header__container container">
           <div class="header__wrapper">
-            <button class="header__burger" data-burger type="button">
-              <span class="visually-hidden">Меню</span>
+            <button class="header__burger" data-burger="" type="button" aria-label="Меню">
               <img class="header__burger-icon-open" src="img/svg/icon-close.svg" width="22" height="22" alt="">
               <img class="header__burger-icon-close" src="img/svg/icon-menu.svg" width="22" height="22" alt="">
             </button>
@@ -29,7 +29,7 @@
               </svg>
             </a>
             <nav class="header__nav">
-              <ul class="header__list list">
+              <ul class="header__list list" data-scroll-lock-scrollable>
                 <li class="header__item">
                   <a class="header__link" href="#">Туры</a>
                 </li>
@@ -50,13 +50,71 @@
                 </li>
               </ul>
             </nav>
-            <a class="header__contact" href="tel:+78007253232">8 800 725-32-32</a>
+            <a class="header__contact" href="tel:+78007253232">8 800 725-32-32</a>
           </div>
         </div>
       </header>
       <main>
         <section class="hero">
+          <h2 class="visually-hidden">Основные маршруты туристической компании.</h2>
+            <div class="swiper hero-swiper" data-hero-swiper="">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide hero-slide">
+                  <div class="hero-slide__background-img">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="img/content/caucasus-background-mobile@1x.webp 1x, img/content/caucasus-background-mobile@2x.webp 2x">
+                      <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/caucasus-background-tablet@1x.webp 1x, img/content/caucasus-background-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/content/caucasus-background-desktop@1x.webp 1x, img/content/caucasus-background-desktop@2x.webp 2x">
 
+                      <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/caucasus-background-mobile@1x.jpg 1x, img/content/caucasus-background-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/caucasus-background-tablet@1x.jpg 1x, img/content/caucasus-background-tablet@2x.jpg 2x">
+                      <img src="img/content/caucasus-background-desktop@1x.jpg" srcset="img/content/caucasus-background-desktop@2x.jpg 2x" width="1440" height="800" alt="">
+                    </picture>
+                  </div>
+                  <div class="hero-slide__wrapper container">
+                    <div class="hero-slide__text-content">
+                      <h3>Захватывающие <br> вершины Кавказа</h3>
+                      <p>
+                        В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.
+                      </p>
+                    </div>
+                    <a class="hero-slide__btn btn" href="#"><span>Смотреть тур</span></a>
+                    <div class="hero-slide__details">
+                      <p class="hero-slide__detail hero-slide__detail--days">
+                        <img src="img/svg/days.svg" width="12" height="12" alt="">
+                        <span class="hero-slide__detail-text">6 дней/5 ночей</span>
+                      </p>
+                      <p class="hero-slide__detail hero-slide__detail--level">
+                        <img src="img/svg/level.svg" width="12" height="12" alt="">
+                        <span class="hero-slide__detail-text">Высокая сложность</span>
+                      </p>
+                    </div>
+                    <div class="hero-slide__video-wrapper" data-camchatka-video-wrapper="">
+                      <div class="hero-slide__poster-wrapper" data-camchatka-poster="">
+                        <picture>
+                          <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/caucasus-poster-tablet@1x.webp 1x, img/content/caucasus-poster-tablet@2x.webp 2x">
+                          <source type="image/webp" srcset="img/content/caucasus-poster-desktop@1x.webp 1x, img/content/caucasus-poster-desktop@2x.webp 2x">
+
+                          <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/caucasus-poster-tablet@1x.jpg 1x, img/content/caucasus-poster-tablet@2x.jpg 2x">
+                          <img src="img/content/caucasus-poster-desktop@1x.jpg" srcset="img/content/caucasus-poster-desktop@2x.jpg 2x" width="482" height="317" alt="Постер к видео.">
+                        </picture>
+                        <button class="hero-slide__video-btn" data-camchatka-button="" type="button" aria-label="Воспроизвести.">
+                          <span class="hero-slide__svg-wrapper">
+                            <svg width="56" height="56">
+                              <use href="img/sprite.svg#icon-play" aria-hidden="true"></use>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">Слайд 2</div>
+                <div class="swiper-slide">Слайд 3</div>
+                <!-- Добавьте нужное количество слайдов -->
+              </div>
+              <div class="swiper-pagination hero-swiper__pagination" data-hero-pagination></div>
+            </div>
         </section>
       </main>
       <footer>
