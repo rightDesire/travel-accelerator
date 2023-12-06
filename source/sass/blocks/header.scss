@@ -1,5 +1,6 @@
 // Стили хэдера академии
 .header {
+  position: relative;
   z-index: 30;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
@@ -22,6 +23,10 @@
     color: $color-default-white;
     background-color: $color-main-additional;
     font-family: $ff-montserrat;
+
+    .is-open & {
+      background-color: $color-default-white;
+    }
 
     @include vp-tablet {
       padding: 20px 45px;
@@ -78,8 +83,6 @@
     }
 
     @include vp-tablet {
-      // max-height: 32px;
-      // overflow-y: auto; // Не удалась реализация переполнения
       font-size: 16px;
       line-height: 16px;
     }
@@ -87,7 +90,6 @@
     @include vp-mobile {
       grid-area: contact;
       justify-self: flex-end;
-      // max-height: 28px;
       font-size: 14px;
       line-height: 14px;
       min-width: unset;
@@ -108,25 +110,24 @@
 
     @include vp-tablet {
       background-color: $color-default-white;
-      bottom: 0;
       display: flex;
       flex-direction: column;
       left: 0;
       opacity: 0;
       margin: 0;
-      padding: 112px 45px 70px 45px;
-      position: fixed;
+      padding: 50px 45px 70px 45px;
+      position: absolute;
       pointer-events: none;
-      top: 0;
+      top: 100%;
+      width: 100%;
       transition: background-color 0.3s ease;
-      right: 0;
       visibility: hidden;
       z-index: 20;
     }
 
 
     @include vp-mobile {
-      padding: 115px 15px 50px 15px;
+      padding: 30px 15px 50px 15px;
     }
   }
 
