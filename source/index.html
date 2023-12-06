@@ -15,8 +15,44 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header" data-header>
+        <div class="header__container container">
+          <div class="header__wrapper">
+            <button class="header__burger" data-burger type="button">
+              <span class="visually-hidden">Меню</span>
+              <img class="header__burger-icon-open" src="img/svg/icon-close.svg" width="22" height="22" alt="">
+              <img class="header__burger-icon-close" src="img/svg/icon-menu.svg" width="22" height="22" alt="">
+            </button>
+            <a class="logo header__logo" href="index.html" aria-label="Переход на главную страницу">
+              <svg width="142" height="42">
+                <use href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <nav class="header__nav">
+              <ul class="header__list list">
+                <li class="header__item">
+                  <a class="header__link" href="#">Туры</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">Обучение</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">О нас</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">Отзывы</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">Фотографии</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__contact" href="tel:+78007253232">8 800 725-32-32</a>
+          </div>
+        </div>
       </header>
       <main>
 
