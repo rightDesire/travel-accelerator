@@ -1,13 +1,8 @@
 .hero-swiper {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  background-color: $color-disabled-background; // Подстраховка, пока background-image не загрузиться
 
   @include vp-tablet {
     position: static;
-    transform: translateY(-2px); // Устраняет зазор
   }
 }
 

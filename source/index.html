@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Второй проект в рамках акселератора">
     <title>LIFETOUR</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -85,7 +85,7 @@
                     <a class="hero-slide__btn btn" href="#"><span>Смотреть тур</span></a>
                     <div class="hero-slide__details">
                       <p class="hero-slide__detail hero-slide__detail--days">
-                        <img src="img/svg/days.svg" width="12" height="12" alt="">
+                        <img src="img/svg/moon.svg" width="12" height="12" alt="">
                         <span class="hero-slide__detail-text">6 дней/5 ночей</span>
                       </p>
                       <p class="hero-slide__detail hero-slide__detail--level">
@@ -103,21 +103,21 @@
                           <img src="img/content/caucasus-poster-desktop@1x.jpg" srcset="img/content/caucasus-poster-desktop@2x.jpg 2x" width="482" height="317" alt="Постер к видео.">
                         </picture>
                         <button class="hero-slide__video-btn" data-caucasus-button="" type="button" aria-label="Воспроизвести.">
-                          <div class="hero-slide__svg-default-wrapper">
+                          <span class="hero-slide__svg-default-wrapper">
                             <svg width="56" height="56">
                               <use href="img/sprite.svg#icon-play" aria-hidden="true"></use>
                             </svg>
-                          </div>
-                          <div class="hero-slide__svg-hover-wrapper">
+                          </span>
+                          <span class="hero-slide__svg-hover-wrapper">
                             <svg width="56" height="56">
                               <use href="img/sprite.svg#icon-play-hover" aria-hidden="true"></use>
                             </svg>
-                          </div>
-                          <div class="hero-slide__svg-active-wrapper">
+                          </span>
+                          <span class="hero-slide__svg-active-wrapper">
                             <svg width="56" height="56">
                               <use href="img/sprite.svg#icon-play-active" aria-hidden="true"></use>
                             </svg>
-                          </div>
+                          </span>
                         </button>
                       </div>
                     </div>
@@ -145,7 +145,7 @@
                     <a class="hero-slide__btn btn" href="#"><span>Смотреть тур</span></a>
                     <div class="hero-slide__details">
                       <p class="hero-slide__detail hero-slide__detail--days">
-                        <img src="img/svg/days.svg" width="12" height="12" alt="">
+                        <img src="img/svg/moon.svg" width="12" height="12" alt="">
                         <span class="hero-slide__detail-text">9 дней/10 ночей</span>
                       </p>
                       <p class="hero-slide__detail hero-slide__detail--level">
@@ -186,7 +186,7 @@
                     <a class="hero-slide__btn btn" href="#"><span>Смотреть тур</span></a>
                     <div class="hero-slide__details">
                       <p class="hero-slide__detail hero-slide__detail--days">
-                        <img src="img/svg/days.svg" width="12" height="12" alt="">
+                        <img src="img/svg/moon.svg" width="12" height="12" alt="">
                         <span class="hero-slide__detail-text">8 дней/7 ночей</span>
                       </p>
                       <p class="hero-slide__detail hero-slide__detail--level">
@@ -202,22 +202,20 @@
                           <img src="img/content/altai-poster-desktop@1x.jpg" srcset="img/content/altai-poster-desktop@2x.jpg 2x" width="340" height="320" alt="Постер к аудио.">
                         </picture>
                         <button class="hero-slide__audio-btn" data-altai-button="" type="button" aria-label="Воспроизвести.">
-                          <span class="hero-slide__svg-wrapper">
-                            <div class="hero-slide__svg-default-wrapper">
-                              <svg width="56" height="56">
-                                <use href="img/sprite.svg#icon-play" aria-hidden="true"></use>
-                              </svg>
-                            </div>
-                            <div class="hero-slide__svg-hover-wrapper">
-                              <svg width="56" height="56">
-                                <use href="img/sprite.svg#icon-play-hover" aria-hidden="true"></use>
-                              </svg>
-                            </div>
-                            <div class="hero-slide__svg-active-wrapper">
-                              <svg width="56" height="56">
-                                <use href="img/sprite.svg#icon-play-active" aria-hidden="true"></use>
-                              </svg>
-                            </div>
+                          <span class="hero-slide__svg-default-wrapper">
+                            <svg width="56" height="56">
+                              <use href="img/sprite.svg#icon-play" aria-hidden="true"></use>
+                            </svg>
+                          </span>
+                          <span class="hero-slide__svg-hover-wrapper">
+                            <svg width="56" height="56">
+                              <use href="img/sprite.svg#icon-play-hover" aria-hidden="true"></use>
+                            </svg>
+                          </span>
+                          <span class="hero-slide__svg-active-wrapper">
+                            <svg width="56" height="56">
+                              <use href="img/sprite.svg#icon-play-active" aria-hidden="true"></use>
+                            </svg>
                           </span>
                         </button>
                       </div>
@@ -229,8 +227,371 @@
             </div>
         </section>
         <section class="tours">
-          <h3 class="tours__title">Ближайшие туры</h3>
+          <div class="tours__container container">
+            <h3 class="tours__title"><span>Ближайшие туры</span></h3>
+            <div class="tours__wrapper">
+              <div class="tours-swiper swiper" data-tours-swiper="">
+                <div class="swiper-wrapper" data-tours-swiper-wrapper="">
+                  <div class="tours-card swiper-slide">
+                    <div class="tours-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/tours-elbrus-mobile@1x.webp 1x, img/content/tours-elbrus-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/tours-elbrus-tablet@1x.webp 1x, img/content/tours-elbrus-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/tours-elbrus-desktop@1x.webp 1x, img/content/tours-elbrus-desktop@2x.webp 2x">
 
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-elbrus-mobile@1x.jpg 1x, img/content/tours-elbrus-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-elbrus-tablet@1x.jpg 1x, img/content/tours-elbrus-tablet@2x.jpg 2x">
+                        <img src="img/content/tours-elbrus-desktop@1x.jpg" srcset="img/content/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на Эльбрус.">
+                      </picture>
+                    </div>
+                    <div class="tours-card__container">
+                      <div class="tours-card__row-info">
+                        <address class="tours-card__address">
+                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <span class="tours-card__address-text">Кавказ</span>
+                        </address>
+                        <div class="tours-card__durations">
+                          <span class="tours-card__duration tours-card__duration--day">
+                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">4 дня</span>
+                          </span>
+                          <span class="tours-card__duration tours-card__duration--night">
+                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">3 ночи</span>
+                          </span>
+                        </div>
+                      </div>
+                      <h4 class="tours-card__title">
+                        <span>Путешествие <br> вокруг Эльбруса</span>
+                      </h4>
+                      <dl class="tours-card__details">
+                        <dt class="tours-card__detail">
+                          Сложность:
+                        </dt>
+                        <dd class="tours-card__description">
+                          <img src="img/svg/stars-elbrus.svg" width="84" height="16" alt="">
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Даты набора:
+                        </dt>
+                        <dd class="tours-card__description">
+                          12.06-19.06
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Группа:
+                        </dt>
+                        <dd class="tours-card__description">
+                          до 15 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="tours-card swiper-slide">
+                    <div class="tours-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/tours-elbrus-mobile@1x.webp 1x, img/content/tours-elbrus-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/tours-elbrus-tablet@1x.webp 1x, img/content/tours-elbrus-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/tours-elbrus-desktop@1x.webp 1x, img/content/tours-elbrus-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-elbrus-mobile@1x.jpg 1x, img/content/tours-elbrus-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-elbrus-tablet@1x.jpg 1x, img/content/tours-elbrus-tablet@2x.jpg 2x">
+                        <img src="img/content/tours-elbrus-desktop@1x.jpg" srcset="img/content/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на Эльбрус.">
+                      </picture>
+                    </div>
+                    <div class="tours-card__container">
+                      <div class="tours-card__row-info">
+                        <address class="tours-card__address">
+                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <span class="tours-card__address-text">Кавказ</span>
+                        </address>
+                        <div class="tours-card__durations">
+                          <span class="tours-card__duration tours-card__duration--day">
+                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">4 дня</span>
+                          </span>
+                          <span class="tours-card__duration tours-card__duration--night">
+                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">3 ночи</span>
+                          </span>
+                        </div>
+                      </div>
+                      <h4 class="tours-card__title">
+                        <span>Путешествие <br> вокруг Эльбруса</span>
+                      </h4>
+                      <dl class="tours-card__details">
+                        <dt class="tours-card__detail">
+                          Сложность:
+                        </dt>
+                        <dd class="tours-card__description">
+                          <img src="img/svg/stars-elbrus.svg" width="84" height="16" alt="">
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Даты набора:
+                        </dt>
+                        <dd class="tours-card__description">
+                          12.06-19.06
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Группа:
+                        </dt>
+                        <dd class="tours-card__description">
+                          до 15 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="tours-card swiper-slide">
+                    <div class="tours-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/tours-elbrus-mobile@1x.webp 1x, img/content/tours-elbrus-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/tours-elbrus-tablet@1x.webp 1x, img/content/tours-elbrus-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/tours-elbrus-desktop@1x.webp 1x, img/content/tours-elbrus-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-elbrus-mobile@1x.jpg 1x, img/content/tours-elbrus-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-elbrus-tablet@1x.jpg 1x, img/content/tours-elbrus-tablet@2x.jpg 2x">
+                        <img src="img/content/tours-elbrus-desktop@1x.jpg" srcset="img/content/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на Эльбрус.">
+                      </picture>
+                    </div>
+                    <div class="tours-card__container">
+                      <div class="tours-card__row-info">
+                        <address class="tours-card__address">
+                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <span class="tours-card__address-text">Кавказ</span>
+                        </address>
+                        <div class="tours-card__durations">
+                          <span class="tours-card__duration tours-card__duration--day">
+                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">4 дня</span>
+                          </span>
+                          <span class="tours-card__duration tours-card__duration--night">
+                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">3 ночи</span>
+                          </span>
+                        </div>
+                      </div>
+                      <h4 class="tours-card__title">
+                        <span>Путешествие <br> вокруг Эльбруса</span>
+                      </h4>
+                      <dl class="tours-card__details">
+                        <dt class="tours-card__detail">
+                          Сложность:
+                        </dt>
+                        <dd class="tours-card__description">
+                          <img src="img/svg/stars-elbrus.svg" width="84" height="16" alt="">
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Даты набора:
+                        </dt>
+                        <dd class="tours-card__description">
+                          12.06-19.06
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Группа:
+                        </dt>
+                        <dd class="tours-card__description">
+                          до 15 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="tours-card swiper-slide">
+                    <div class="tours-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/tours-elbrus-mobile@1x.webp 1x, img/content/tours-elbrus-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/tours-elbrus-tablet@1x.webp 1x, img/content/tours-elbrus-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/tours-elbrus-desktop@1x.webp 1x, img/content/tours-elbrus-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-elbrus-mobile@1x.jpg 1x, img/content/tours-elbrus-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-elbrus-tablet@1x.jpg 1x, img/content/tours-elbrus-tablet@2x.jpg 2x">
+                        <img src="img/content/tours-elbrus-desktop@1x.jpg" srcset="img/content/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на Эльбрус.">
+                      </picture>
+                    </div>
+                    <div class="tours-card__container">
+                      <div class="tours-card__row-info">
+                        <address class="tours-card__address">
+                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <span class="tours-card__address-text">Кавказ</span>
+                        </address>
+                        <div class="tours-card__durations">
+                          <span class="tours-card__duration tours-card__duration--day">
+                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">4 дня</span>
+                          </span>
+                          <span class="tours-card__duration tours-card__duration--night">
+                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">3 ночи</span>
+                          </span>
+                        </div>
+                      </div>
+                      <h4 class="tours-card__title">
+                        <span>Путешествие <br> вокруг Эльбруса</span>
+                      </h4>
+                      <dl class="tours-card__details">
+                        <dt class="tours-card__detail">
+                          Сложность:
+                        </dt>
+                        <dd class="tours-card__description">
+                          <img src="img/svg/stars-elbrus.svg" width="84" height="16" alt="">
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Даты набора:
+                        </dt>
+                        <dd class="tours-card__description">
+                          12.06-19.06
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Группа:
+                        </dt>
+                        <dd class="tours-card__description">
+                          до 15 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="tours-card swiper-slide">
+                    <div class="tours-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/tours-elbrus-mobile@1x.webp 1x, img/content/tours-elbrus-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/tours-elbrus-tablet@1x.webp 1x, img/content/tours-elbrus-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/tours-elbrus-desktop@1x.webp 1x, img/content/tours-elbrus-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-elbrus-mobile@1x.jpg 1x, img/content/tours-elbrus-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-elbrus-tablet@1x.jpg 1x, img/content/tours-elbrus-tablet@2x.jpg 2x">
+                        <img src="img/content/tours-elbrus-desktop@1x.jpg" srcset="img/content/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на Эльбрус.">
+                      </picture>
+                    </div>
+                    <div class="tours-card__container">
+                      <div class="tours-card__row-info">
+                        <address class="tours-card__address">
+                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <span class="tours-card__address-text">Кавказ</span>
+                        </address>
+                        <div class="tours-card__durations">
+                          <span class="tours-card__duration tours-card__duration--day">
+                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">4 дня</span>
+                          </span>
+                          <span class="tours-card__duration tours-card__duration--night">
+                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">3 ночи</span>
+                          </span>
+                        </div>
+                      </div>
+                      <h4 class="tours-card__title">
+                        <span>Путешествие <br> вокруг Эльбруса</span>
+                      </h4>
+                      <dl class="tours-card__details">
+                        <dt class="tours-card__detail">
+                          Сложность:
+                        </dt>
+                        <dd class="tours-card__description">
+                          <img src="img/svg/stars-elbrus.svg" width="84" height="16" alt="">
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Даты набора:
+                        </dt>
+                        <dd class="tours-card__description">
+                          12.06-19.06
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Группа:
+                        </dt>
+                        <dd class="tours-card__description">
+                          до 15 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="tours-card swiper-slide">
+                    <div class="tours-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/tours-elbrus-mobile@1x.webp 1x, img/content/tours-elbrus-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/tours-elbrus-tablet@1x.webp 1x, img/content/tours-elbrus-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/tours-elbrus-desktop@1x.webp 1x, img/content/tours-elbrus-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-elbrus-mobile@1x.jpg 1x, img/content/tours-elbrus-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-elbrus-tablet@1x.jpg 1x, img/content/tours-elbrus-tablet@2x.jpg 2x">
+                        <img src="img/content/tours-elbrus-desktop@1x.jpg" srcset="img/content/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на Эльбрус.">
+                      </picture>
+                    </div>
+                    <div class="tours-card__container">
+                      <div class="tours-card__row-info">
+                        <address class="tours-card__address">
+                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <span class="tours-card__address-text">Кавказ</span>
+                        </address>
+                        <div class="tours-card__durations">
+                          <span class="tours-card__duration tours-card__duration--day">
+                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">4 дня</span>
+                          </span>
+                          <span class="tours-card__duration tours-card__duration--night">
+                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <span class="tours-card__duration-text">3 ночи</span>
+                          </span>
+                        </div>
+                      </div>
+                      <h4 class="tours-card__title">
+                        <span>Путешествие <br> вокруг Эльбруса</span>
+                      </h4>
+                      <dl class="tours-card__details">
+                        <dt class="tours-card__detail">
+                          Сложность:
+                        </dt>
+                        <dd class="tours-card__description">
+                          <img src="img/svg/stars-elbrus.svg" width="84" height="16" alt="">
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Даты набора:
+                        </dt>
+                        <dd class="tours-card__description">
+                          12.06-19.06
+                        </dd>
+
+                        <dt class="tours-card__detail">
+                          Группа:
+                        </dt>
+                        <dd class="tours-card__description">
+                          до 15 чел.
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tours-swiper__btn tours-swiper__btn--next swiper-button-next" data-tours-btn-next="">
+                <svg width="14" height="9">
+                  <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                </svg>
+              </div>
+              <div class="tours-swiper__btn tours-swiper__btn--prev swiper-button-prev" data-tours-btn-prev="">
+                <svg width="14" height="9">
+                  <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                </svg>
+              </div>
+              <div class="tours-swiper__all-slides-wrapper">
+                <button class="tours-swiper__all-slides" type="button" data-all-slides-btn="">
+                  <span class="tours-swiper__all-slides-text" data-all-slides-text="">Показать все туры</span>
+                  <span class="tours-swiper__svg-wrapper" data-all-slides-icon="">
+                    <svg width="9" height="14">
+                      <use href="img/sprite.svg#arrow-btn"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
       <footer>

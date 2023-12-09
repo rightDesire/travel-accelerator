@@ -1,8 +1,19 @@
 // Стили хэдера академии
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 127px;
+
   z-index: 30;
   transition: transform 0.3s ease, background-color 0.3s ease;
+
+  @include vp-tablet {
+    position: relative;
+    height: auto;
+  }
 
   &--sticky {
     position: fixed;
