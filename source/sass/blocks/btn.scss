@@ -11,7 +11,7 @@
   @include hover-focus {
     color: $color-active-btn;
     background-color: $color-default-white;
-    border: 2px solid $color-active-btn;
+    outline: 1px solid $color-active-btn;
   }
 
   @include active {

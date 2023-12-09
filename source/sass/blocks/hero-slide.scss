@@ -1,7 +1,7 @@
 .hero-slide {
+  height: inherit;
   min-height: 800px;
   color: $color-default-white;
-  background-color: $color-disabled-background; // Подстраховка, пока background-image не загрузиться
 
   @include vp-tablet {
     min-height: 942px;
@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  height: 100%;
   min-height: inherit;
   padding-top: 200px;
   padding-bottom: 80px;
@@ -48,7 +49,7 @@
 
   & h3 {
     position: relative;
-    max-width: 780px;
+    max-width: 944px;
     margin: 0;
     margin-bottom: 25px;
     font-size: 77px;
@@ -58,19 +59,21 @@
     z-index: 2;
 
     @include vp-tablet {
+      max-width: 590px;
       align-self: center;
       font-size: 56px;
       line-height: 56px;
     }
 
     @include vp-mobile {
+      max-width: 290px;
       font-size: 26px;
       line-height: 26px;
     }
   }
 
   & p {
-    max-width: 420px;
+    max-width: 464px;
     margin: 0;
     margin-bottom: 35px;
     font-size: 17px;
@@ -79,12 +82,14 @@
     word-wrap: break-word;
 
     @include vp-tablet {
+      max-width: 500px;
       align-self: center;
       font-size: 17px;
       line-height: 24px;
     }
 
     @include vp-mobile {
+      max-width: 290px;
       font-size: 15px;
       line-height: 20px;
     }
@@ -96,9 +101,18 @@
   align-items: center;
   width: 180px;
   margin-bottom: 45px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
 
   @include vp-tablet {
     align-self: center;
+  }
+
+  &--disabled {
+    color: $color-default-white;
+    background-color: $color-disabled-background;
+    cursor: default;
   }
 
   & span {
@@ -164,6 +178,26 @@
   }
 }
 
+.hero-slide__audio-wrapper {
+  position: absolute;
+  bottom: 30px;
+  right: 120px;
+  transform: translateY(-42%); // Подгон
+  z-index: 1;
+
+  @include vp-tablet {
+    position: static;
+    align-self: center;
+    right: 45px;
+    transform: unset;
+  }
+
+  @include vp-mobile {
+    display: none;
+    right: 15px;
+  }
+}
+
 .hero-slide__poster-wrapper {
   position: relative;
 }
@@ -175,13 +209,36 @@
   }
 }
 
-.hero-slide__video-btn {
+.hero-slide__video-btn,
+.hero-slide__audio-btn {
   position: absolute;
   top: 50%;
   left: 50%;
+  display: inherit;
   padding: 0;
   border: none;
   background-color: transparent;
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
+  cursor: pointer;
+}
+
+.hero-slide__img {
+  position: absolute;
+  bottom: 30px;
+  right: 120px;
+  transform: translateY(-28%); // Подгон
+  z-index: 1;
+
+  @include vp-tablet {
+    position: static;
+    align-self: center;
+    right: 45px;
+    transform: unset;
+  }
+
+  @include vp-mobile {
+    display: none;
+    right: 15px;
+  }
 }

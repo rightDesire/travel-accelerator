@@ -3,7 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/burger';
 import {StickyHeader} from './modules/sticky-header';
 import {initSliders} from './modules/init-sliders';
-import {initVideos} from './modules/init-videos';
+import {initMedia} from './modules/init-media';
 
 // ---------------------------------
 
@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
 
   initSliders();
-  initVideos();
+  initMedia();
   // ---------------------------------
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

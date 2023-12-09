@@ -5,7 +5,7 @@ const vpTablet = 1200;
 const vpMobile = 768;
 
 const loop = {
-  loopHero: true,
+  loopHero: false, // Тестируем
 };
 
 const breakpointsHero = {

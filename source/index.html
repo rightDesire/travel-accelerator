@@ -19,10 +19,12 @@
       <header class="header" data-header="">
         <div class="header__container container">
           <div class="header__wrapper">
-            <button class="header__burger" data-burger="" type="button" aria-label="Меню">
-              <img class="header__burger-icon-open" src="img/svg/icon-close.svg" width="22" height="22" alt="">
-              <img class="header__burger-icon-close" src="img/svg/icon-menu.svg" width="22" height="22" alt="">
-            </button>
+            <div class="header__burger-wrapper">
+              <button class="header__burger" data-burger="" type="button" aria-label="Меню">
+                <img class="header__burger-icon-open" src="img/svg/icon-close.svg" width="26" height="26" alt="">
+                <img class="header__burger-icon-close" src="img/svg/icon-menu.svg" width="26" height="26" alt="">
+              </button>
+            </div>
             <a class="logo header__logo" href="index.html" aria-label="Переход на главную страницу">
               <svg width="142" height="42">
                 <use href="img/sprite.svg#logo"></use>
@@ -50,16 +52,18 @@
                 </li>
               </ul>
             </nav>
-            <a class="header__contact" href="tel:+78007253232">8 800 725-32-32</a>
+            <div class="header__contact-wrapper">
+              <a class="header__contact" href="tel:+78007253232">8 800 725-32-32</a>
+            </div>
           </div>
         </div>
       </header>
       <main>
         <section class="hero">
           <h2 class="visually-hidden">Основные маршруты туристической компании.</h2>
-            <div class="swiper hero-swiper" data-hero-swiper="">
+            <div class="hero-swiper swiper" data-hero-swiper="">
               <div class="swiper-wrapper">
-                <div class="swiper-slide hero-slide">
+                <div class="hero-slide swiper-slide">
                   <div class="hero-slide__background-img">
                     <picture>
                       <source media="(max-width: 767px)" type="image/webp" srcset="img/content/caucasus-background-mobile@1x.webp 1x, img/content/caucasus-background-mobile@2x.webp 2x">
@@ -89,8 +93,8 @@
                         <span class="hero-slide__detail-text">Высокая сложность</span>
                       </p>
                     </div>
-                    <div class="hero-slide__video-wrapper" data-camchatka-video-wrapper="">
-                      <div class="hero-slide__poster-wrapper" data-camchatka-poster="">
+                    <div class="hero-slide__video-wrapper" data-caucasus-video-wrapper="">
+                      <div class="hero-slide__poster-wrapper" data-caucasus-poster="">
                         <picture>
                           <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/caucasus-poster-tablet@1x.webp 1x, img/content/caucasus-poster-tablet@2x.webp 2x">
                           <source type="image/webp" srcset="img/content/caucasus-poster-desktop@1x.webp 1x, img/content/caucasus-poster-desktop@2x.webp 2x">
@@ -98,23 +102,135 @@
                           <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/caucasus-poster-tablet@1x.jpg 1x, img/content/caucasus-poster-tablet@2x.jpg 2x">
                           <img src="img/content/caucasus-poster-desktop@1x.jpg" srcset="img/content/caucasus-poster-desktop@2x.jpg 2x" width="482" height="317" alt="Постер к видео.">
                         </picture>
-                        <button class="hero-slide__video-btn" data-camchatka-button="" type="button" aria-label="Воспроизвести.">
-                          <span class="hero-slide__svg-wrapper">
+                        <button class="hero-slide__video-btn" data-caucasus-button="" type="button" aria-label="Воспроизвести.">
+                          <div class="hero-slide__svg-default-wrapper">
                             <svg width="56" height="56">
                               <use href="img/sprite.svg#icon-play" aria-hidden="true"></use>
                             </svg>
+                          </div>
+                          <div class="hero-slide__svg-hover-wrapper">
+                            <svg width="56" height="56">
+                              <use href="img/sprite.svg#icon-play-hover" aria-hidden="true"></use>
+                            </svg>
+                          </div>
+                          <div class="hero-slide__svg-active-wrapper">
+                            <svg width="56" height="56">
+                              <use href="img/sprite.svg#icon-play-active" aria-hidden="true"></use>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-slide swiper-slide">
+                  <div class="hero-slide__background-img">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="img/content/kamchatka-background-mobile@1x.webp 1x, img/content/kamchatka-background-mobile@2x.webp 2x">
+                      <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/kamchatka-background-tablet@1x.webp 1x, img/content/kamchatka-background-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/content/kamchatka-background-desktop@1x.webp 1x, img/content/kamchatka-background-desktop@2x.webp 2x">
+
+                      <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/kamchatka-background-mobile@1x.jpg 1x, img/content/kamchatka-background-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/kamchatka-background-tablet@1x.jpg 1x, img/content/kamchatka-background-tablet@2x.jpg 2x">
+                      <img src="img/content/kamchatka-background-desktop@1x.jpg" srcset="img/content/kamchatka-background-desktop@2x.jpg 2x" width="1440" height="800" alt="">
+                    </picture>
+                  </div>
+                  <div class="hero-slide__wrapper container">
+                    <div class="hero-slide__text-content">
+                      <h3>Невероятная природа Камчатки</h3>
+                      <p>
+                        Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.
+                      </p>
+                    </div>
+                    <a class="hero-slide__btn btn" href="#"><span>Смотреть тур</span></a>
+                    <div class="hero-slide__details">
+                      <p class="hero-slide__detail hero-slide__detail--days">
+                        <img src="img/svg/days.svg" width="12" height="12" alt="">
+                        <span class="hero-slide__detail-text">9 дней/10 ночей</span>
+                      </p>
+                      <p class="hero-slide__detail hero-slide__detail--level">
+                        <img src="img/svg/level.svg" width="12" height="12" alt="">
+                        <span class="hero-slide__detail-text">Средняя сложность</span>
+                      </p>
+                    </div>
+                    <div class="hero-slide__img">
+                      <picture>
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/kamchatka-img-tablet@1x.webp 1x, img/content/kamchatka-img-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/kamchatka-img-desktop@1x.webp 1x, img/content/kamchatka-img-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 1199px)" type="image/png" srcset="img/content/kamchatka-img-tablet@1x.png 1x, img/content/kamchatka-img-tablet@2x.png 2x">
+                        <img src="img/content/kamchatka-img-desktop@1x.png" srcset="img/content/kamchatka-img-desktop@2x.png 2x" width="410" height="459" alt="Фотокарточки с похода.">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-slide swiper-slide">
+                  <div class="hero-slide__background-img">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="img/content/altai-background-mobile@1x.webp 1x, img/content/altai-background-mobile@2x.webp 2x">
+                      <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/altai-background-tablet@1x.webp 1x, img/content/altai-background-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/content/altai-background-desktop@1x.webp 1x, img/content/altai-background-desktop@2x.webp 2x">
+
+                      <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/altai-background-mobile@1x.jpg 1x, img/content/altai-background-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/altai-background-tablet@1x.jpg 1x, img/content/altai-background-tablet@2x.jpg 2x">
+                      <img src="img/content/altai-background-desktop@1x.jpg" srcset="img/content/altai-background-desktop@2x.jpg 2x" width="1440" height="800" alt="">
+                    </picture>
+                  </div>
+                  <div class="hero-slide__wrapper container">
+                    <div class="hero-slide__text-content">
+                      <h3>Магические пейзажи <br> Алтайского Края</h3>
+                      <p>
+                        Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.
+                      </p>
+                    </div>
+                    <a class="hero-slide__btn btn" href="#"><span>Смотреть тур</span></a>
+                    <div class="hero-slide__details">
+                      <p class="hero-slide__detail hero-slide__detail--days">
+                        <img src="img/svg/days.svg" width="12" height="12" alt="">
+                        <span class="hero-slide__detail-text">8 дней/7 ночей</span>
+                      </p>
+                      <p class="hero-slide__detail hero-slide__detail--level">
+                        <img src="img/svg/level.svg" width="12" height="12" alt="">
+                        <span class="hero-slide__detail-text">Легкая сложность</span>
+                      </p>
+                    </div>
+                    <div class="hero-slide__audio-wrapper" data-altai-audio-wrapper="">
+                      <div class="hero-slide__poster-wrapper" data-altai-poster="">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/altai-poster-desktop@1x.webp 1x, img/content/altai-poster-desktop@2x.webp 2x">
+
+                          <img src="img/content/altai-poster-desktop@1x.jpg" srcset="img/content/altai-poster-desktop@2x.jpg 2x" width="340" height="320" alt="Постер к аудио.">
+                        </picture>
+                        <button class="hero-slide__audio-btn" data-altai-button="" type="button" aria-label="Воспроизвести.">
+                          <span class="hero-slide__svg-wrapper">
+                            <div class="hero-slide__svg-default-wrapper">
+                              <svg width="56" height="56">
+                                <use href="img/sprite.svg#icon-play" aria-hidden="true"></use>
+                              </svg>
+                            </div>
+                            <div class="hero-slide__svg-hover-wrapper">
+                              <svg width="56" height="56">
+                                <use href="img/sprite.svg#icon-play-hover" aria-hidden="true"></use>
+                              </svg>
+                            </div>
+                            <div class="hero-slide__svg-active-wrapper">
+                              <svg width="56" height="56">
+                                <use href="img/sprite.svg#icon-play-active" aria-hidden="true"></use>
+                              </svg>
+                            </div>
                           </span>
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">Слайд 2</div>
-                <div class="swiper-slide">Слайд 3</div>
-                <!-- Добавьте нужное количество слайдов -->
               </div>
-              <div class="swiper-pagination hero-swiper__pagination" data-hero-pagination></div>
+              <div class="swiper-pagination hero-swiper__pagination" data-hero-pagination=""></div>
             </div>
+        </section>
+        <section class="tours">
+          <h3 class="tours__title">Ближайшие туры</h3>
+
         </section>
       </main>
       <footer>

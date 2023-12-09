@@ -3,10 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
+  background-color: $color-disabled-background; // Подстраховка, пока background-image не загрузиться
 
   @include vp-tablet {
     position: static;
-    transform: translateY(-1px); // Устраняет зазор
+    transform: translateY(-2px); // Устраняет зазор
   }
 }
 
@@ -22,4 +23,12 @@
     bottom: 0;
     transform: translateY(-50%) translateX(50%);
   }
+}
+
+.hero-swiper__pagination span {
+  margin: 0;
+}
+
+.hero-swiper__pagination span:not(:last-child) {
+  margin-right: 20px;
 }

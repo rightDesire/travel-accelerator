@@ -33,6 +33,7 @@
     }
 
     @include vp-mobile {
+      padding: 15px;
       display: grid;
       grid-template-areas:
         "burger logo"
@@ -50,6 +51,15 @@
     padding-left: 33px;
     padding-right: 30px;
     color: $color-default-white;
+
+    @include hover-focus {
+      outline: none;
+      opacity: 0.7;
+    }
+
+    @include active {
+      opacity: 0.5;
+    }
 
     .is-open & {
       position: relative;
@@ -80,12 +90,43 @@
     overflow-y: hidden;
     overflow-x: auto;
 
+    @include hover-focus {
+      outline: none;
+      color: $color-main-text;
+    }
+
+    @include active {
+      color: $color-default-white;
+      opacity: 0.5;
+    }
+
+    &:disabled,
+    &--disabled {
+      color: $color-default-white;
+      opacity: 1;
+      cursor: default;
+    }
+
     .is-open & {
       color: $color-main-text;
       z-index: 25;
+
+      @include active {
+        color: $color-main-additional;
+        opacity: 0.5;
+      }
+
+      &:disabled,
+      &--disabled {
+        color: $color-main-additional;
+        opacity: 1;
+        cursor: default;
+      }
     }
 
     @include vp-tablet {
+      max-width: unset;
+      min-width: 130px;
       font-size: 16px;
       line-height: 16px;
 
@@ -95,8 +136,9 @@
     }
 
     @include vp-mobile {
-      grid-area: contact;
       justify-self: flex-end;
+      width: auto;
+      max-width: 145px;
       font-size: 14px;
       line-height: 14px;
       min-width: unset;
@@ -123,7 +165,7 @@
       left: 0;
       opacity: 0;
       margin: 0;
-      padding: 50px 45px 70px 45px;
+      padding: 30px 45px 70px 45px;
       position: absolute;
       pointer-events: none;
       top: 100%;
@@ -136,7 +178,7 @@
 
 
     @include vp-mobile {
-      padding: 30px 15px 50px 15px;
+      padding: 15px 15px 50px 15px;
     }
   }
 
@@ -144,7 +186,7 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 12px;
+    row-gap: 14px;
     padding: 0 40px;
     font-size: 16px;
     font-style: normal;
@@ -157,7 +199,7 @@
     @include vp-tablet {
       flex-direction: column;
       align-items: flex-start;
-      row-gap: 25px;
+      row-gap: 12px;
       padding: 0;
 
       overflow: visible;
@@ -170,19 +212,19 @@
     @include vp-mobile {
       max-height: 200px;
       min-height: 194px;
-      row-gap: 19px;
+      row-gap: 10px;
     }
   }
 
   &__item {
-    max-width: 105px;
+    max-width: 113px;
 
     &:not(:last-child) {
-      margin: 0 30px 0 0;
+      margin: 0 25px 0 0;
     }
 
     @include vp-tablet {
-      max-width: 135px;
+      max-width: 145px;
       opacity: 0;
       transition: opacity ease-out 0.15s, transform ease-out 0.15s;
       transform: translateX(-15px);
@@ -190,11 +232,34 @@
   }
 
   &__link {
+    display: block;
+    max-width: inherit;
     color: $color-default-white;
-    font-size: 16px;
-    line-height: 25px;
+    padding: 3px 3px; // Подгон
+    border: 1px solid transparent;
     word-wrap: break-word;
     transition: color 0.3s ease;
+
+    @include hover {
+      border-bottom-color: $color-default-white;
+    }
+
+    @include focus {
+      outline: none;
+      border-color: $color-default-white;
+    }
+
+    @include active {
+      color: $color-default-white;
+      border-color: transparent;
+    }
+
+    &:disabled,
+    &--disabled {
+      color: $color-default-white;
+      border-color: transparent;
+      cursor: default;
+    }
 
     @include vp-tablet {
       color: $color-main-text;
@@ -203,6 +268,27 @@
       line-height: 16px;
       letter-spacing: 0.64px;
       text-transform: uppercase;
+
+      @include hover {
+        border-bottom-color: $color-main-text;
+      }
+
+      @include focus {
+        outline: none;
+        border-color: $color-main-text;
+      }
+
+      @include active {
+        color: $color-main-text;
+        border-color: transparent;
+      }
+
+      &:disabled,
+      &--disabled {
+        color: $color-main-text;
+        border-color: transparent;
+        cursor: default;
+      }
     }
 
     @include vp-mobile {
@@ -218,9 +304,14 @@
     border: none;
     color: #000000;
     display: none;
-    padding: 4px 0;
+    padding: 0;
     position: relative;
     z-index: 25;
+
+    @include focus {
+      outline: none;
+      opacity: 0.7;
+    }
 
     .is-open {
       .header__burger-icon {
@@ -239,6 +330,7 @@
     @include vp-mobile {
       grid-area: burger;
       align-self: flex-start;
+      width: auto;
     }
   }
 
@@ -261,7 +353,7 @@
     transition: opacity 0.3s ease;
     pointer-events: none;
     position: absolute;
-    right: 0;
+    // right: 0;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -277,5 +369,31 @@
 .header__container {
   @include vp-tablet {
     padding: 0;
+  }
+}
+
+.header__burger-wrapper,
+.header__contact-wrapper {
+  display: flex;
+  align-items: center;
+
+  @include vp-tablet {
+    width: 226px;
+  }
+
+  @include vp-mobile {
+    width: auto;
+  }
+}
+
+.header__burger-wrapper {
+  justify-content: start;
+}
+
+.header__contact-wrapper {
+  justify-content: end;
+
+  @include vp-mobile {
+    grid-area: contact;
   }
 }
