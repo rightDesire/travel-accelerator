@@ -1,0 +1,136 @@
+.training {
+  position: relative;
+
+  @include vp-tablet {
+    padding-bottom: 45px;
+  }
+
+  @include vp-mobile {
+    padding-bottom: 20px;
+  }
+}
+
+.training__wrapper {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 56px;
+
+  @include vp-tablet {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  @include vp-mobile {
+    padding-top: 25px;
+  }
+}
+
+.training__title {
+  margin-bottom: 37px;
+
+  @include vp-tablet {
+    margin-bottom: 26px;
+  }
+
+  @include vp-mobile {
+    margin-bottom: 18px;
+  }
+}
+
+.training__title::after {
+  content: "Обучение";
+}
+
+.training__text-content {
+  & p {
+    max-width: 900px;
+    margin: 0;
+    margin-bottom: 56px;
+    color: $color-main-text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+
+    @include vp-tablet {
+      max-width: 600px;
+    }
+
+    @include vp-mobile {
+      margin-bottom: 25px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.training__swiper-title {
+  display: flex;
+  justify-content: start;
+  align-items: end; // Не понятно как надо (в фигме)
+  min-height: 55px;
+  margin: 0;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+
+  & span {
+    max-width: 500px;
+    word-wrap: break-word;
+
+    @include vp-mobile {
+      max-width: 201px;
+    }
+  }
+
+  @include vp-mobile {
+    font-size: 19px;// С font-size из фигмы текст не помещается
+  }
+}
+
+.training__process-title {
+  margin: 0;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 23px;
+
+  & span {
+    max-width: 500px;
+    word-wrap: break-word;
+
+    @include vp-mobile {
+      max-width: 201px;
+    }
+  }
+
+  @include vp-tablet {
+    margin-bottom: 44px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include vp-mobile {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.training__img-wrapper {
+  position: absolute;
+  bottom: -25%; // Подгон
+  right: 0;
+  z-index: -1;
+
+  @include vp-tablet {
+    bottom: -10%; // Подгон
+  }
+
+  @include vp-mobile {
+    display: none;
+  }
+}

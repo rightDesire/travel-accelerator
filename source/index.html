@@ -227,8 +227,17 @@
             </div>
         </section>
         <section class="tours">
+          <div class="tours__img-wrapper">
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/content/tours-clouds-mobile@1x.webp 1x, img/content/tours-clouds-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/tours-clouds-desktop@1x.webp 1x, img/content/tours-clouds-desktop@2x.webp 2x">
+
+              <source media="(max-width: 767px)" type="image/png" srcset="img/content/tours-clouds-mobile@1x.png 1x, img/content/tours-clouds-mobile@2x.png 2x">
+              <img src="img/content/tours-clouds-desktop@1x.png" srcset="img/content/tours-clouds-desktop@2x.png 2x" width="602" height="1630" alt="">
+            </picture>
+          </div>
           <div class="tours__container container">
-            <h3 class="tours__title"><span>Ближайшие туры</span></h3>
+            <h2 class="tours__title shadow-title"><span>Ближайшие туры</span></h2>
             <div class="tours__wrapper">
               <div class="tours-swiper swiper" data-tours-swiper="">
                 <div class="swiper-wrapper" data-tours-swiper-wrapper="">
@@ -261,9 +270,9 @@
                           </span>
                         </div>
                       </div>
-                      <h4 class="tours-card__title">
+                      <h3 class="tours-card__title">
                         <span>Путешествие <br> вокруг Эльбруса</span>
-                      </h4>
+                      </h3>
                       <dl class="tours-card__details">
                         <dt class="tours-card__detail">
                           Сложность:
@@ -317,9 +326,9 @@
                           </span>
                         </div>
                       </div>
-                      <h4 class="tours-card__title">
+                      <h3 class="tours-card__title">
                         <span>Путешествие <br> вокруг Эльбруса</span>
-                      </h4>
+                      </h3>
                       <dl class="tours-card__details">
                         <dt class="tours-card__detail">
                           Сложность:
@@ -373,9 +382,9 @@
                           </span>
                         </div>
                       </div>
-                      <h4 class="tours-card__title">
+                      <h3 class="tours-card__title">
                         <span>Путешествие <br> вокруг Эльбруса</span>
-                      </h4>
+                      </h3>
                       <dl class="tours-card__details">
                         <dt class="tours-card__detail">
                           Сложность:
@@ -429,9 +438,9 @@
                           </span>
                         </div>
                       </div>
-                      <h4 class="tours-card__title">
+                      <h3 class="tours-card__title">
                         <span>Путешествие <br> вокруг Эльбруса</span>
-                      </h4>
+                      </h3>
                       <dl class="tours-card__details">
                         <dt class="tours-card__detail">
                           Сложность:
@@ -485,9 +494,9 @@
                           </span>
                         </div>
                       </div>
-                      <h4 class="tours-card__title">
+                      <h3 class="tours-card__title">
                         <span>Путешествие <br> вокруг Эльбруса</span>
-                      </h4>
+                      </h3>
                       <dl class="tours-card__details">
                         <dt class="tours-card__detail">
                           Сложность:
@@ -541,9 +550,9 @@
                           </span>
                         </div>
                       </div>
-                      <h4 class="tours-card__title">
+                      <h3 class="tours-card__title">
                         <span>Путешествие <br> вокруг Эльбруса</span>
-                      </h4>
+                      </h3>
                       <dl class="tours-card__details">
                         <dt class="tours-card__detail">
                           Сложность:
@@ -570,12 +579,12 @@
                   </div>
                 </div>
               </div>
-              <div class="tours-swiper__btn tours-swiper__btn--next swiper-button-next" data-tours-btn-next="">
+              <div class="travel-swiper-btn tours-swiper__btn tours-swiper__btn--next swiper-button-next" data-tours-btn-next="">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                 </svg>
               </div>
-              <div class="tours-swiper__btn tours-swiper__btn--prev swiper-button-prev" data-tours-btn-prev="">
+              <div class="travel-swiper-btn tours-swiper__btn tours-swiper__btn--prev swiper-button-prev" data-tours-btn-prev="">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                 </svg>
@@ -591,6 +600,309 @@
                 </button>
               </div>
             </div>
+          </div>
+        </section>
+        <section class="training">
+          <div class="training__container container">
+            <h2 class="training__title shadow-title"><span>Обучение</span></h2>
+            <div class="training__text-content">
+              <p>
+                Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
+              </p>
+            </div>
+            <h3 class="training__swiper-title"><span>Наши инструкторы</span></h3>
+            <div class="training__wrapper">
+              <div class="training-swiper swiper" data-training-swiper="">
+                <div class="swiper-wrapper" data-training-swiper-wrapper="">
+                  <div class="training-card swiper-slide">
+                    <div class="training-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/instructor-1-mobile@1x.webp 1x, img/content/instructor-1-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/instructor-1-tablet@1x.webp 1x, img/content/instructor-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/instructor-1-desktop@1x.webp 1x, img/content/instructor-1-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-1-mobile@1x.jpg 1x, img/content/instructor-1-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-1-tablet@1x.jpg 1x, img/content/instructor-1-tablet@2x.jpg 2x">
+                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Надежда Колесниченко.">
+                      </picture>
+                    </div>
+                    <div class="training-card__row-wrapper">
+                      <h4 class="training-card__title">
+                        Надежда <br> Колесниченко
+                      </h4>
+                      <a class="training-card__social social social--vk" href="#">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#vk-icon" aria-hidden="true"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="training-card__text-content">
+                      <p>
+                        Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="training-card swiper-slide">
+                    <div class="training-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/instructor-1-mobile@1x.webp 1x, img/content/instructor-1-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/instructor-1-tablet@1x.webp 1x, img/content/instructor-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/instructor-1-desktop@1x.webp 1x, img/content/instructor-1-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-1-mobile@1x.jpg 1x, img/content/instructor-1-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-1-tablet@1x.jpg 1x, img/content/instructor-1-tablet@2x.jpg 2x">
+                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Надежда Колесниченко.">
+                      </picture>
+                    </div>
+                    <div class="training-card__row-wrapper">
+                      <h4 class="training-card__title">
+                        Надежда <br> Колесниченко
+                      </h4>
+                      <a class="training-card__social social social--vk" href="#">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#vk-icon" aria-hidden="true"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="training-card__text-content">
+                      <p>
+                        Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="training-card swiper-slide">
+                    <div class="training-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/instructor-1-mobile@1x.webp 1x, img/content/instructor-1-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/instructor-1-tablet@1x.webp 1x, img/content/instructor-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/instructor-1-desktop@1x.webp 1x, img/content/instructor-1-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-1-mobile@1x.jpg 1x, img/content/instructor-1-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-1-tablet@1x.jpg 1x, img/content/instructor-1-tablet@2x.jpg 2x">
+                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Надежда Колесниченко.">
+                      </picture>
+                    </div>
+                    <div class="training-card__row-wrapper">
+                      <h4 class="training-card__title">
+                        Надежда <br> Колесниченко
+                      </h4>
+                      <a class="training-card__social social social--vk" href="#">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#vk-icon" aria-hidden="true"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="training-card__text-content">
+                      <p>
+                        Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="training-card swiper-slide">
+                    <div class="training-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/instructor-1-mobile@1x.webp 1x, img/content/instructor-1-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/instructor-1-tablet@1x.webp 1x, img/content/instructor-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/instructor-1-desktop@1x.webp 1x, img/content/instructor-1-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-1-mobile@1x.jpg 1x, img/content/instructor-1-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-1-tablet@1x.jpg 1x, img/content/instructor-1-tablet@2x.jpg 2x">
+                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Надежда Колесниченко.">
+                      </picture>
+                    </div>
+                    <div class="training-card__row-wrapper">
+                      <h4 class="training-card__title">
+                        Надежда <br> Колесниченко
+                      </h4>
+                      <a class="training-card__social social social--vk" href="#">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#vk-icon" aria-hidden="true"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="training-card__text-content">
+                      <p>
+                        Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="training-card swiper-slide">
+                    <div class="training-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/instructor-1-mobile@1x.webp 1x, img/content/instructor-1-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/instructor-1-tablet@1x.webp 1x, img/content/instructor-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/instructor-1-desktop@1x.webp 1x, img/content/instructor-1-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-1-mobile@1x.jpg 1x, img/content/instructor-1-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-1-tablet@1x.jpg 1x, img/content/instructor-1-tablet@2x.jpg 2x">
+                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Надежда Колесниченко.">
+                      </picture>
+                    </div>
+                    <div class="training-card__row-wrapper">
+                      <h4 class="training-card__title">
+                        Надежда <br> Колесниченко
+                      </h4>
+                      <a class="training-card__social social social--vk" href="#">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#vk-icon" aria-hidden="true"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="training-card__text-content">
+                      <p>
+                        Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="training-card swiper-slide">
+                    <div class="training-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/instructor-1-mobile@1x.webp 1x, img/content/instructor-1-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/instructor-1-tablet@1x.webp 1x, img/content/instructor-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/instructor-1-desktop@1x.webp 1x, img/content/instructor-1-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-1-mobile@1x.jpg 1x, img/content/instructor-1-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-1-tablet@1x.jpg 1x, img/content/instructor-1-tablet@2x.jpg 2x">
+                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Надежда Колесниченко.">
+                      </picture>
+                    </div>
+                    <div class="training-card__row-wrapper">
+                      <h4 class="training-card__title">
+                        Надежда <br> Колесниченко
+                      </h4>
+                      <a class="training-card__social social social--vk" href="#">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#vk-icon" aria-hidden="true"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="training-card__text-content">
+                      <p>
+                        Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="training-card swiper-slide">
+                    <div class="training-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/instructor-1-mobile@1x.webp 1x, img/content/instructor-1-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/instructor-1-tablet@1x.webp 1x, img/content/instructor-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/instructor-1-desktop@1x.webp 1x, img/content/instructor-1-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-1-mobile@1x.jpg 1x, img/content/instructor-1-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-1-tablet@1x.jpg 1x, img/content/instructor-1-tablet@2x.jpg 2x">
+                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Надежда Колесниченко.">
+                      </picture>
+                    </div>
+                    <div class="training-card__row-wrapper">
+                      <h4 class="training-card__title">
+                        Надежда <br> Колесниченко
+                      </h4>
+                      <a class="training-card__social social social--vk" href="#">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#vk-icon" aria-hidden="true"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="training-card__text-content">
+                      <p>
+                        Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="training-card swiper-slide">
+                    <div class="training-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/instructor-1-mobile@1x.webp 1x, img/content/instructor-1-mobile@2x.webp 2x">
+                        <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/instructor-1-tablet@1x.webp 1x, img/content/instructor-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/instructor-1-desktop@1x.webp 1x, img/content/instructor-1-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-1-mobile@1x.jpg 1x, img/content/instructor-1-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-1-tablet@1x.jpg 1x, img/content/instructor-1-tablet@2x.jpg 2x">
+                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Надежда Колесниченко.">
+                      </picture>
+                    </div>
+                    <div class="training-card__row-wrapper">
+                      <h4 class="training-card__title">
+                        Надежда <br> Колесниченко
+                      </h4>
+                      <a class="training-card__social social social--vk" href="#">
+                        <svg width="16" height="9">
+                          <use href="img/sprite.svg#vk-icon" aria-hidden="true"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="training-card__text-content">
+                      <p>
+                        Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="travel-swiper-btn training-swiper__btn training-swiper__btn--next swiper-button-next" data-training-btn-next="">
+                <svg width="14" height="9">
+                  <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                </svg>
+              </div>
+              <div class="travel-swiper-btn training-swiper__btn training-swiper__btn--prev swiper-button-prev" data-training-btn-prev="">
+                <svg width="14" height="9">
+                  <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                </svg>
+              </div>
+            </div>
+            <h3 class="training__process-title"><span>Процесс обучения</span></h3>
+          </div>
+          <ul class="training__list process list">
+            <li class="process__item">
+              <div class="process__wrapper">
+                <div class="process__img-wrapper">
+                  <img src="img/svg/map.svg" width="25" height="25" alt="">
+                </div>
+                <p class="process__text">
+                  Изучение спортивного туристского движения
+                </p>
+              </div>
+            </li>
+            <li class="process__item">
+              <div class="process__wrapper">
+                <div class="process__img-wrapper">
+                  <img src="img/svg/boots.svg" width="25" height="25" alt="">
+                </div>
+                <p class="process__text">
+                  Подготовка и техническое снаряжение в походах
+                </p>
+              </div>
+            </li>
+            <li class="process__item">
+              <div class="process__wrapper">
+                <div class="process__img-wrapper">
+                  <img src="img/svg/tree.svg" width="25" height="25" alt="">
+                </div>
+                <p class="process__text">
+                  Лекции по окружающей среде, экологии и гигиене
+                </p>
+              </div>
+            </li>
+            <li class="process__item">
+              <div class="process__wrapper">
+                <div class="process__img-wrapper">
+                  <img src="img/svg/mountain.svg" width="25" height="25" alt="">
+                </div>
+                <p class="process__text">
+                  Разъяснение сложности горных препятствий
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="training__img-wrapper">
+            <picture>
+              <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/training-clouds-tablet@1x.webp 1x, img/content/training-clouds-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/training-clouds-desktop@1x.webp 1x, img/content/training-clouds-desktop@2x.webp 2x">
+
+              <source media="(max-width: 1199px)" type="image/png" srcset="img/content/training-clouds-tablet@1x.png 1x, img/content/training-clouds-tablet@2x.png 2x">
+              <img src="img/content/training-clouds-desktop@1x.png" srcset="img/content/training-clouds-desktop@2x.png 2x" width="840" height="280" alt="">
+            </picture>
           </div>
         </section>
       </main>

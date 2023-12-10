@@ -11,53 +11,23 @@
   }
 }
 
-.tours__title {
-  position: relative;
-  display: flex;
-  justify-content: start;
-  align-items: end;
-  min-height: 56px;
-  margin: 0;
-  color: $color-main-text;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 100%;
-
-  & span {
-    max-width: 550px;
-    word-wrap: break-word;
-
-    @include vp-mobile {
-      max-width: 205px;
-    }
-  }
+.tours__img-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: -1000;
 
   @include vp-mobile {
-    font-size: 20px; // С font-size из фигмы текст не помещается
-    font-weight: 800;
-    line-height: 22px;
+    width: 346px;
+    height: 595px;
   }
+}
 
-  &::after {
-    content: "Ближайшие туры";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-family: $ff-montserrat;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 800;
-    opacity: 0.03;
-    z-index: -1;
+.tours__title::after {
+  content: "Ближайшие туры";
+}
 
-    @include vp-mobile {
-      max-width: 290px;
-      overflow-x: hidden;
-      white-space: nowrap;
-      font-size: 29px;
-      font-weight: 800;
-      line-height: 42px;
-    }
-  }
+.tours__wrapper {
+  position: relative;
 }

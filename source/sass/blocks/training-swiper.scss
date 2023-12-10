@@ -1,0 +1,17 @@
+.training-swiper__btn {
+  top: 0;
+  left: unset;
+  transform: translateY(-37%) translateX(-1px); // Подгон
+
+  &--next {
+    right: 0;
+
+    & svg {
+      scale: (-1);
+    }
+  }
+
+  &--prev {
+    right: 41px;
+  }
+}

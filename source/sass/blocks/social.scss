@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: $color-main-text;
+  background-color: $color-default-white;
+  border: 1px solid $color-disabled-background;
+
+  @include hover-focus {
+    border-color: $color-main-text;
+  }
+
+  @include active {
+    color: $color-default-white;
+    background-color: $color-main-additional;
+    border-color: transparent;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-disabled-background;
+    border-color: $color-disabled-background;
+    background-color: $color-default-white;
+  }
+}
