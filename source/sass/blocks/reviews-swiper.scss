@@ -1,0 +1,32 @@
+.reviews-swiper {
+  padding: 10px;
+  padding-top: 40px;
+  padding-right: 0;
+
+  @include vp-tablet {
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  @include vp-mobile {
+    padding-top: 15px;
+  }
+}
+
+.reviews-swiper__btn {
+  top: 0;
+  left: unset;
+  transform: translateY(-37%); // Подгон
+
+  &--next {
+    right: 0;
+
+    & svg {
+      scale: (-1);
+    }
+  }
+
+  &--prev {
+    right: 41px;
+  }
+}
