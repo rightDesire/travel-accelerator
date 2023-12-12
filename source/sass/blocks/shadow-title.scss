@@ -11,15 +11,6 @@
   font-weight: 800;
   line-height: 100%;
 
-  & span {
-    max-width: 550px;
-    word-wrap: break-word;
-
-    @include vp-mobile {
-      max-width: 205px;
-    }
-  }
-
   @include vp-mobile {
     font-size: 20px; // С font-size из фигмы текст не помещается
     font-weight: 800;

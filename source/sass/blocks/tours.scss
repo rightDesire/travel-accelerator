@@ -24,8 +24,19 @@
   }
 }
 
-.tours__title::after {
-  content: "Ближайшие туры";
+.tours__title {
+  &::after {
+    content: "Ближайшие туры";
+  }
+
+  & span {
+    max-width: 550px;
+    word-wrap: break-word;
+
+    @include vp-mobile {
+      max-width: 205px;
+    }
+  }
 }
 
 .tours__wrapper {

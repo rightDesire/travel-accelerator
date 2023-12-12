@@ -1,0 +1,152 @@
+.about {
+  display: flex;
+  position: relative;
+
+  @include vp-mobile {
+    flex-direction: column;
+  }
+}
+
+.about__img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  @include vp-tablet {
+    top: 60px;
+  }
+
+  @include vp-mobile {
+    position: static;
+    margin-bottom: 6px;
+    z-index: 0;
+    pointer-events: all;
+  }
+}
+
+.about__img-wrapper img {
+  width: 808px;
+  height: 470px;
+  max-width: unset;
+  object-fit: cover;
+
+  @include vp-tablet {
+    width: 542px;
+    height: 350px;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.about__container {
+  min-height: 474px;
+
+  @include vp-tablet {
+    min-height: 541px;
+    overflow-x: auto; // Реализация переполнения текста про историб компании и наши цели
+  }
+
+  @include vp-mobile {
+    min-height: auto;
+  }
+}
+
+.about__wrapper {
+  margin-left: 615px;
+  background-color: $color-default-white;
+
+  @include vp-tablet {
+    margin-left: 408px;
+  }
+
+  @include vp-mobile {
+    margin-left: 0;
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+
+  @include vp-tablet {
+    max-width: 200px;
+    margin-bottom: 36px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-mobile {
+    max-width: 200px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  & span {
+    max-width: 250px;
+    word-wrap: break-word;
+
+    @include vp-tablet {
+      max-width: 200px;
+    }
+
+    @include vp-mobile {
+      max-width: 200px;
+    }
+  }
+
+  &::after {
+    content: "О нас";
+  }
+}
+
+.about__text-content {
+  & h3 {
+    max-width: 250px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    word-wrap: break-word;
+
+    @include vp-tablet {
+      max-width: 200px;
+      margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    @include vp-mobile {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  & p {
+    max-width: 585px;
+    margin: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+
+    &:not(:last-of-type) {
+      margin-bottom: 25px;
+    }
+
+    @include vp-mobile {
+      line-height: 20px;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .training {
   position: relative;
+  margin-bottom: 56px;
 
   @include vp-tablet {
     padding-bottom: 45px;
@@ -34,6 +35,15 @@
 
   @include vp-mobile {
     margin-bottom: 18px;
+  }
+
+  & span {
+    max-width: 550px;
+    word-wrap: break-word;
+
+    @include vp-mobile {
+      max-width: 205px;
+    }
   }
 }
 
