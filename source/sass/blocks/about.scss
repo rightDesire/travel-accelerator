@@ -48,7 +48,7 @@
 
   @include vp-tablet {
     min-height: 541px;
-    overflow-x: auto; // Реализация переполнения текста про историб компании и наши цели
+    overflow-x: auto; // Реализация переполнения текста
   }
 
   @include vp-mobile {
@@ -78,29 +78,19 @@
   line-height: 100%;
 
   @include vp-tablet {
-    max-width: 200px;
     margin-bottom: 36px;
     font-size: 25px;
     line-height: 25px;
   }
 
   @include vp-mobile {
-    max-width: 200px;
     font-size: 22px;
     line-height: 22px;
   }
 
   & span {
-    max-width: 250px;
+    max-width: 290px;
     word-wrap: break-word;
-
-    @include vp-tablet {
-      max-width: 200px;
-    }
-
-    @include vp-mobile {
-      max-width: 200px;
-    }
   }
 
   &::after {
@@ -110,7 +100,7 @@
 
 .about__text-content {
   & h3 {
-    max-width: 250px;
+    max-width: 290px;
     margin: 0;
     margin-bottom: 20px;
     font-size: 21px;
@@ -120,7 +110,6 @@
     word-wrap: break-word;
 
     @include vp-tablet {
-      max-width: 200px;
       margin-bottom: 15px;
       font-size: 18px;
       line-height: 18px;
