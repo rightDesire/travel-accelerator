@@ -1,0 +1,43 @@
+.advantages-swiper {
+  width: 1200px;
+  // overflow: visible; // Появляется скролл
+
+  @include vp-tablet {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+
+    @include vp-tablet {
+      padding: 0 45px;
+    }
+
+    @include vp-mobile {
+      padding: 0 15px;
+    }
+  }
+}
+
+.advantages-swiper__wrapper {
+  // display: flex;
+  // justify-content: center;
+}
+
+.advantages-swiper__btn-wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 4px;
+  min-height: 35px;
+  margin-top: 50px;
+}
+
+.advantages-swiper__btn {
+  position: static;
+  transform: translateY(22px); // Подгон
+
+  &--next {
+    & svg {
+      scale: (-1);
+    }
+  }
+}
