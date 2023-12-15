@@ -86,8 +86,10 @@ const breakpointsReviews = {
 const breakpointsAdvantages = {
   [vpDesktop]: {
     allowTouchMove: false,
-    slidesPerView: 3,
+    initialSlide: 2,
     spaceBetween: 30,
+    slidesPerView: 3.585,
+    centeredSlides: !0,
   },
 };
 

@@ -5,8 +5,6 @@ const initAdvantagesSlider = (isLoop, breakpointSettings, vpTablet) => {
   const swiperButtonPrev = document.querySelector('[data-advantages-btn-prev]');
   const swiperSlides = swiperWrapper.querySelectorAll('[data-advantages-swiper-slide]');
 
-  const middleSlide = Math.floor(swiperSlides.length) / 2;
-
   const swiperConfig = {
     loop: isLoop,
     navigation: {
@@ -14,7 +12,6 @@ const initAdvantagesSlider = (isLoop, breakpointSettings, vpTablet) => {
       prevEl: swiperButtonPrev,
     },
     breakpoints: breakpointSettings,
-    initialSlide: middleSlide,
   };
 
   let mySwiper = new window.Swiper(swiperContainer, swiperConfig);

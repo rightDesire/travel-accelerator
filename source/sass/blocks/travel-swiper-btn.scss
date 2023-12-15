@@ -5,6 +5,7 @@
   height: 35px;
   color: $color-default-white;
   background-color: $color-main-additional;
+  z-index: 1;
 
   @include hover-focus {
     color: $color-main-text;

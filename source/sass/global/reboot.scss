@@ -35,6 +35,20 @@ body {
   background-color: $color-default-white;
 }
 
+// Стили при хедере академии
+body[data-scroll-lock-locked="true"] {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(45, 56, 63, 0.6);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
 a {
   color: $color-default-black;
   text-decoration: none;
