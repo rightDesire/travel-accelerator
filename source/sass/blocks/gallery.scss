@@ -1,0 +1,81 @@
+.gallery__title {
+  margin-bottom: 27px;
+
+  &::after {
+    content: "Фотогалерея";
+  }
+
+  & span {
+    max-width: 500px;
+    word-wrap: break-word;
+
+    @include vp-tablet {
+      max-width: 420px;
+    }
+
+    @include vp-mobile {
+      max-width: 290px;
+    }
+  }
+}
+
+.gallery__text-content {
+  & p {
+    max-width: 700px;
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+
+    @include vp-tablet {
+      max-width: 420px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @include vp-mobile {
+      max-width: 290px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  @include vp-mobile {
+    align-self: flex-start;
+  }
+}
+
+.gallery__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-mobile {
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.gallery__btn-wrapper {
+  display: flex;
+  column-gap: 4px;
+  height: 35px;
+
+  @include vp-mobile {
+    align-self: end;
+  }
+}
+
+.gallery-swiper__btn {
+  position: static;
+  transform: translateY(22px);
+
+  &--next {
+    & svg {
+      scale: (-1);
+    }
+  }
+}

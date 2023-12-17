@@ -23,16 +23,9 @@ const initAdvantagesSlider = (isLoop, breakpointSettings, vpTablet) => {
       mySwiper.destroy(true, true);
       mySwiper = new window.Swiper(swiperContainer, swiperConfig);
       swiperWrapper.classList.remove('advantages-swiper-all-slides');
-
-      // Показать кнопки переключения
-      mySwiper.navigation.nextEl.style.display = 'flex';
-      mySwiper.navigation.prevEl.style.display = 'flex';
     } else {
       // Показать все слайды
       swiperWrapper.classList.add('advantages-swiper-all-slides');
-      // Скрыть кнопки переключения
-      mySwiper.navigation.nextEl.style.display = 'none';
-      mySwiper.navigation.prevEl.style.display = 'none';
       mySwiper.destroy(true, true);
     }
 

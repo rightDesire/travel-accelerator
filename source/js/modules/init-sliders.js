@@ -3,6 +3,7 @@ import {initReviewsSlider} from './reviews-slider';
 import {initToursSlider} from './tours-slider';
 import {initTrainingSlider} from './training-slider';
 import {initAdvantagesSlider} from './advantages-slider';
+import { initGallerySlider } from './gallery-slider';
 
 const vpDesktop = 1200;
 const vpTablet = 768;
@@ -14,6 +15,7 @@ const loop = {
   training: false,
   reviews: true,
   advantages: true,
+  gallery: true,
 };
 
 const breakpointsHero = {
@@ -93,10 +95,32 @@ const breakpointsAdvantages = {
   },
 };
 
+const breakpointsGallery = {
+  [vpDesktop]: {
+    allowTouchMove: false,
+    slidesPerView: 'auto',
+    // initialSlide: 2,
+    spaceBetween: 5,
+  },
+  [vpTablet]: {
+    allowTouchMove: true,
+    slidesPerView: 'auto',
+    // initialSlide: 2,
+    spaceBetween: 5,
+  },
+  [vpMobile]: {
+    allowTouchMove: true,
+    slidesPerView: 'auto',
+    // initialSlide: 2,
+    spaceBetween: 3,
+  },
+};
+
 export const initSliders = () => {
   initHeroSlider(loop.hero, breakpointsHero);
   initToursSlider(loop.tours, breakpointsTours);
   initTrainingSlider(loop.training, breakpointsTraining);
   initReviewsSlider(loop.reviews, breakpointsReviews);
   initAdvantagesSlider(loop.advantages, breakpointsAdvantages, vpDesktop);
+  initGallerySlider(loop.gallery, breakpointsGallery);
 };

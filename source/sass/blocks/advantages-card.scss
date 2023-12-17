@@ -18,6 +18,7 @@
 
     @include vp-mobile {
       max-width: unset;
+      margin: 0;
       grid-column: unset;
     }
   }
@@ -60,14 +61,17 @@
 }
 
 .advantages-card__title {
+  max-width: 340px;
   margin: 0;
   margin-bottom: 15px;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
+  word-wrap: break-word;
 
   @include vp-tablet {
+    max-width: 284px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -79,13 +83,16 @@
 }
 
 .advantages-card__description {
+  max-width: 340px;
   margin: 0;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+  word-wrap: break-word;
 
   @include vp-mobile {
+    max-width: 284px;
     font-size: 12px;
     line-height: 18px;
   }

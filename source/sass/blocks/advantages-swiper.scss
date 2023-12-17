@@ -1,4 +1,6 @@
 .advantages-swiper {
+  max-width: 1440px;
+
   @include vp-tablet {
     width: 100%;
     max-width: 1440px;
@@ -21,6 +23,10 @@
   column-gap: 4px;
   min-height: 35px;
   margin-top: 50px;
+
+  @include vp-tablet {
+    display: none;
+  }
 }
 
 .advantages-swiper__btn {

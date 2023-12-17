@@ -1,0 +1,9 @@
+.gallery-swiper {
+  height: 450px;
+  margin-top: 46px;
+  margin-bottom: 3px;
+
+  @include vp-mobile {
+    margin: 0 15px;
+  }
+}
