@@ -99,19 +99,16 @@ const breakpointsGallery = {
   [vpDesktop]: {
     allowTouchMove: false,
     slidesPerView: 'auto',
-    // initialSlide: 2,
     spaceBetween: 5,
   },
   [vpTablet]: {
     allowTouchMove: true,
     slidesPerView: 'auto',
-    // initialSlide: 2,
     spaceBetween: 5,
   },
   [vpMobile]: {
     allowTouchMove: true,
     slidesPerView: 'auto',
-    // initialSlide: 2,
     spaceBetween: 3,
   },
 };

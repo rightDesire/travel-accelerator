@@ -5,6 +5,7 @@
   position: relative;
   color: $color-default-white;
   background-color: $color-disabled-background;
+  height: inherit;
 
   @include vp-tablet {
     width: 330px;
@@ -20,6 +21,7 @@
   flex-direction: column;
   justify-content: end;
   width: inherit; // Перезапись для allSLides
+  height: 100%;
   min-height: inherit;
   padding: 30px 20px;
 }
