@@ -179,11 +179,18 @@
   }
 }
 
+.hero-slide__video-wrapper img {
+  @include vp-tablet {
+    width: 442px;
+    height: 300px;
+  }
+}
+
 .hero-slide__audio-wrapper {
   position: absolute;
-  bottom: 30px;
+  bottom: 60px;
   right: 120px;
-  transform: translateY(-42%); // Подгон
+  transform: translateY(-44%); // Подгон
   z-index: 1;
 
   @include vp-tablet {
@@ -203,13 +210,6 @@
   position: relative;
 }
 
-.hero-slide__poster-wrapper img {
-  @include vp-tablet {
-    width: 442px;
-    height: 300px;
-  }
-}
-
 .hero-slide__video-btn,
 .hero-slide__audio-btn {
   position: absolute;
@@ -222,6 +222,174 @@
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
   cursor: pointer;
+}
+
+.hero-slide__video-btn {
+  .hero-slide__svg {
+    &--default {
+      display: block;
+      color: $color-default-white;
+    }
+
+    &--hover {
+      display: none;
+      color: transparent;
+    }
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    .hero-slide__svg {
+      &--default {
+        display: none;
+      }
+
+      &--hover {
+        display: block;
+      }
+    }
+  }
+
+  @include active {
+    .hero-slide__svg {
+      &--default {
+        display: none;
+      }
+
+      &--hover {
+        display: block;
+        color: $color-active-btn;
+      }
+    }
+  }
+
+  &:disabled {
+    cursor: auto;
+    opacity: 0.7;
+
+    .hero-slide__svg {
+      &--default {
+        display: block;
+        opacity: 0.7;
+        color: $color-main-additional;
+      }
+
+      &--hover {
+        display: none;
+      }
+    }
+
+    @include hover-focus {
+      .hero-slide__svg {
+        &--default {
+          display: block;
+        }
+
+        &--hover {
+          display: none;
+        }
+      }
+    }
+
+    @include active {
+      .hero-slide__svg {
+        &--default {
+          display: block;
+        }
+
+        &--hover {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.hero-slide__audio-btn {
+  transform: translateX(-50%) translateY(25%);
+
+  .hero-slide__svg {
+    &--default {
+      display: none;
+      color: transparent;
+    }
+
+    &--hover {
+      display: block;
+      color: $color-active-btn;
+    }
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    .hero-slide__svg {
+      &--default {
+        display: block;
+        color: $color-default-black;
+      }
+
+      &--hover {
+        display: none;
+      }
+    }
+  }
+
+  @include active {
+    .hero-slide__svg {
+      &--default {
+        display: none;
+      }
+
+      &--hover {
+        display: block;
+        color: $color-active-btn;
+      }
+    }
+  }
+
+  &:disabled {
+    cursor: auto;
+    opacity: 0.7;
+
+    .hero-slide__svg {
+      &--default {
+        display: block;
+        opacity: 0.7;
+        color: $color-main-additional;
+      }
+
+      &--hover {
+        display: none;
+      }
+    }
+
+    @include hover-focus {
+      .hero-slide__svg {
+        &--default {
+          display: block;
+          color: $color-main-additional;
+        }
+
+        &--hover {
+          display: none;
+        }
+      }
+    }
+
+    @include active {
+      .hero-slide__svg {
+        &--default {
+          display: block;
+        }
+
+        &--hover {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .hero-slide__img {

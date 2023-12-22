@@ -1,4 +1,4 @@
-const initTrainingSlider = (isLoop, breakpointSettings) => {
+const initTrainingSlider = (isLoop, breakpointSettings, initSlide) => {
   const swiperWrapper = document.querySelector('[data-training-swiper]');
   const swiperButtonNext = document.querySelector('[data-training-btn-next]');
   const swiperButtonPrev = document.querySelector('[data-training-btn-prev]');
@@ -10,6 +10,7 @@ const initTrainingSlider = (isLoop, breakpointSettings) => {
       prevEl: swiperButtonPrev,
     },
     breakpoints: breakpointSettings,
+    initialSlide: initSlide,
   });
 };
 

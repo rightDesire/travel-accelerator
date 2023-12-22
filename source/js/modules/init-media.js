@@ -14,8 +14,8 @@ const mediaOptions = {
     },
   },
   altai: {
-    src: 'https://www.youtube.com/embed/9TZXsZItgdw',
-    description: 'Видео с Кавказа.',
+    src: 'https://music.yandex.ru/iframe/track/119107082/25474374',
+    description: 'Подкаст про алтайский трекинг-тур.',
     breakpoints: {
       tablet: vpTablet,
       mobile: vpMobile,

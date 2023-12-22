@@ -1,23 +1,24 @@
-const initHeroSlider = (isLoop, breakpointSettings) => {
+const initHeroSlider = (isLoop, breakpointSettings, tabIndexOnSlideChange = -1) => {
   const swiperWrapper = document.querySelector('[data-hero-swiper]');
   const swiperPagination = document.querySelector('[data-hero-pagination]');
 
-  return new window.Swiper(swiperWrapper, {
+  const swiperOptions = {
     loop: isLoop,
     pagination: {
       el: swiperPagination,
-      clickable: true, // Делает пагинацию кликабельной
+      clickable: true,
     },
     breakpoints: breakpointSettings,
     on: {
       slideChange: () => {
-        // Всем слайдам tabIndex = -1
         swiperWrapper.querySelectorAll('.swiper-slide').forEach((slide) => {
-          slide.tabIndex = -1;
+          slide.tabIndex = tabIndexOnSlideChange;
         });
       },
     },
-  });
+  };
+
+  return new window.Swiper(swiperWrapper, swiperOptions);
 };
 
 export {initHeroSlider};

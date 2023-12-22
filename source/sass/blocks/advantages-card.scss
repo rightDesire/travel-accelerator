@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   width: 380px;
+  height: inherit;
   min-height: 329px;
   padding: 40px 20px;
   text-align: center;
@@ -61,7 +62,7 @@
 }
 
 .advantages-card__title {
-  max-width: 340px;
+  max-width: 300px;
   margin: 0;
   margin-bottom: 15px;
   font-size: 18px;
@@ -83,7 +84,7 @@
 }
 
 .advantages-card__description {
-  max-width: 340px;
+  max-width: 300px;
   margin: 0;
   font-size: 14px;
   font-style: normal;

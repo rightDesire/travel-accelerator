@@ -14,7 +14,6 @@
 
   @include active {
     color: $color-default-white;
-    background-color: $color-main-additional;
     border-color: transparent;
   }
 
@@ -23,5 +22,23 @@
     color: $color-disabled-background;
     border-color: $color-disabled-background;
     background-color: $color-default-white;
+  }
+
+  &--vk {
+    @include active {
+      background-color: $color-main-additional;
+    }
+  }
+
+  &--ok {
+    @include active {
+      background-color: $color-ok;
+    }
+  }
+
+  &--reddit {
+    @include active {
+      background-color: $color-reddit;
+    }
   }
 }

@@ -148,6 +148,23 @@
   font-weight: 400;
   line-height: 16px;
 
+  @include hover {
+    border: 1px solid $color-main-additional;
+
+    &::placeholder {
+      color: $color-main-additional;
+    }
+  }
+
+  @include focus {
+    outline: none;
+    border: 1px solid $color-active-btn;
+  }
+
+  @include active {
+    border: 1px solid $color-active-btn;
+  }
+
   @include vp-tablet {
     padding: 17px 15px;
     max-width: 270px;

@@ -4,6 +4,7 @@
   margin-bottom: 3px;
 
   @include vp-mobile {
+    height: 260px;
     margin: 0 15px;
   }
 }

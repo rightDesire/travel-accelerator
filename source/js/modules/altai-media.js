@@ -8,7 +8,7 @@ export const initAltaiMedia = (src, description, breakpoints) => {
   const audioPoster = audioContainer.querySelector('[data-altai-poster]');
   const audioButton = audioContainer.querySelector('[data-altai-button]');
   const audioWidth = 340;
-  const audioHeight = 320;
+  const audioHeight = 220;
   let iframe;
 
   // Функция установки атрибутов элемента
@@ -41,7 +41,7 @@ export const initAltaiMedia = (src, description, breakpoints) => {
       width: audioWidth,
       height: audioHeight,
       title: description,
-      style: 'display: none; border: none',
+      style: 'display: none; border: none; width:340px; height:220px;',
     });
 
     // Создаем индикатор загрузки

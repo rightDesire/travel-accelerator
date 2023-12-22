@@ -32,6 +32,19 @@
   &::after {
     content: "Контакты";
   }
+
+  & span {
+    max-width: 500px;
+    word-wrap: break-word;
+
+    @include vp-tablet {
+      max-width: 700px;
+    }
+
+    @include vp-mobile {
+      max-width: 290px;
+    }
+  }
 }
 
 .contacts__text-content {
@@ -94,10 +107,17 @@
   display: flex;
   align-items: center;
   column-gap: 30px;
-  margin-bottom: 35px;
 
   @include vp-tablet {
     column-gap: 10px;
+    align-items: start;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 35px;
+
+  @include vp-tablet {
     margin-bottom: 0;
   }
 
@@ -107,7 +127,14 @@
 }
 
 .contacts__img-wrapper img {
+  width: 26px;
+  height: 26px;
   max-width: unset;
+
+  @include vp-tablet {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .contacts__contact {
@@ -115,6 +142,7 @@
 }
 
 .contacts__term {
+  max-width: 200px;
   margin-bottom: 8px;
   font-size: 18px;
   font-style: normal;
@@ -123,6 +151,7 @@
   word-wrap: break-word;
 
   @include vp-tablet {
+    max-width: 100px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -134,13 +163,16 @@
 }
 
 .contacts__description {
+  max-width: 400px;
   margin-left: 0;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  word-wrap: break-word;
 
   @include vp-tablet {
+    max-width: 150px;
     font-size: 14px;
     line-height: 22px;
   }

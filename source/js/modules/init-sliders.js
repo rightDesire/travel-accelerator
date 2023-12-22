@@ -18,6 +18,11 @@ const loop = {
   gallery: true,
 };
 
+const initSlide = {
+  tours: 6,
+  training: 8,
+};
+
 const breakpointsHero = {
   [vpDesktop]: {
     allowTouchMove: false,
@@ -115,8 +120,8 @@ const breakpointsGallery = {
 
 export const initSliders = () => {
   initHeroSlider(loop.hero, breakpointsHero);
-  initToursSlider(loop.tours, breakpointsTours);
-  initTrainingSlider(loop.training, breakpointsTraining);
+  initToursSlider(loop.tours, breakpointsTours, initSlide.tours);
+  initTrainingSlider(loop.training, breakpointsTraining, initSlide.training);
   initReviewsSlider(loop.reviews, breakpointsReviews);
   initAdvantagesSlider(loop.advantages, breakpointsAdvantages, vpDesktop);
   initGallerySlider(loop.gallery, breakpointsGallery);
