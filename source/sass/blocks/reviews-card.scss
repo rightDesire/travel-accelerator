@@ -5,7 +5,7 @@
   height: inherit;
   padding: 20px;
   padding-right: 40px;
-  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 
   @include vp-tablet {
     width: 565px;
@@ -16,6 +16,7 @@
     flex-direction: column;
     width: auto;
     padding: 20px;
+    box-shadow: none;
   }
 }
 
@@ -47,29 +48,29 @@
     padding-top: 20px;
     padding-bottom: 15px;
   }
+}
 
-  & p {
-    max-width: 352px;
-    margin: 0;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    word-wrap: break-word;
+.reviews-card__text-content p {
+  max-width: 352px;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  word-wrap: break-word;
 
-    @include vp-tablet {
-      max-width: 299px;
-      font-size: 12px;
-      line-height: 18px;
-    }
-
-    @include vp-mobile {
-      max-width: unset;
-    }
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
   }
 
-  & p:not(:last-of-type) {
-    margin-bottom: 10px;
+  @include vp-tablet {
+    max-width: 299px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @include vp-mobile {
+    max-width: unset;
   }
 }
 

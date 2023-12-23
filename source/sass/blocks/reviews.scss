@@ -10,18 +10,40 @@
   }
 }
 
-
 .reviews__wrapper {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .reviews__swiper-title {
-  & span {
-    max-width: 550px;
-    word-wrap: break-word;
+  min-height: unset;
 
-    @include vp-mobile {
-      max-width: 205px;
-    }
+  &::after {
+    content: "Отзывы";
   }
+}
+
+.reviews__swiper-title span {
+  max-width: 550px;
+  word-wrap: break-word;
+
+  @include vp-mobile {
+    max-width: 205px;
+  }
+}
+
+.reviews__btn-wrapper {
+  display: flex;
+  column-gap: 4px;
+  height: 35px;
+}
+
+.reviews__btn {
+  position: static;
+  transform: translateY(66%); // Подгон
+}
+
+.reviews__btn--next svg {
+  scale: (-1);
 }

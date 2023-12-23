@@ -32,10 +32,8 @@
 .advantages-swiper__btn {
   position: static;
   transform: translateY(22px); // Подгон
+}
 
-  &--next {
-    & svg {
-      scale: (-1);
-    }
-  }
+.advantages-swiper__btn--next svg {
+  scale: (-1);
 }

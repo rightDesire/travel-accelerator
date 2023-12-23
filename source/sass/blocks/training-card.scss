@@ -5,7 +5,7 @@
   height: inherit;
   min-height: 386px;
   padding: 15px;
-  border: 1px solid rgba(2, 102, 193, 0.10);
+  border: 1px solid rgba(2, 102, 193, 0.1);
 }
 
 .training-card__title {
@@ -41,13 +41,13 @@
 
 .training-card__text-content {
   // margin-top: auto;
+}
 
-  & p {
-    margin: 0;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    word-wrap: break-word;
-  }
+.training-card__text-content p {
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
 }

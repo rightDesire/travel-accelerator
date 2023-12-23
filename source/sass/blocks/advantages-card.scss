@@ -8,7 +8,7 @@
   min-height: 329px;
   padding: 40px 20px;
   text-align: center;
-  border: 1px solid rgba(2, 102, 193, 0.10);
+  border: 1px solid rgba(2, 102, 193, 0.1);
 
   &--odd-card {
     @include vp-tablet {
@@ -61,7 +61,7 @@
   }
 }
 
-.advantages-card__title {
+.advantages-card__text-content h3 {
   max-width: 300px;
   margin: 0;
   margin-bottom: 15px;
@@ -83,7 +83,7 @@
   }
 }
 
-.advantages-card__description {
+.advantages-card__text-content p {
   max-width: 300px;
   margin: 0;
   font-size: 14px;

@@ -32,40 +32,38 @@
   &::after {
     content: "Контакты";
   }
+}
 
-  & span {
-    max-width: 500px;
-    word-wrap: break-word;
+.contacts__title span {
+  max-width: 500px;
+  word-wrap: break-word;
 
-    @include vp-tablet {
-      max-width: 700px;
-    }
+  @include vp-tablet {
+    max-width: 700px;
+  }
 
-    @include vp-mobile {
-      max-width: 290px;
-    }
+  @include vp-mobile {
+    max-width: 290px;
   }
 }
 
-.contacts__text-content {
-  & p {
-    margin: 0;
-    margin-bottom: 50px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
+.contacts__text-content p {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
 
-    @include vp-tablet {
-      margin-bottom: 40px;
-    }
+  @include vp-tablet {
+    margin-bottom: 40px;
+  }
 
-    @include vp-mobile {
-      margin-bottom: 30px;
-      font-size: 14px;
-      line-height: 20px;
-    }
+  @include vp-mobile {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 

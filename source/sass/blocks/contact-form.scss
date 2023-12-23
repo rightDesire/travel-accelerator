@@ -55,53 +55,53 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  & h2 {
-    max-width: 1000px;
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 100%;
-    word-wrap: break-word;
+.contact-form__text-content h2 {
+  max-width: 1000px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+  word-wrap: break-word;
 
-    @include vp-tablet {
-      max-width: 285px;
-      font-size: 25px;
-      line-height: 25px;
-      margin-bottom: 25px;
-    }
-
-    @include vp-mobile {
-      font-size: 22px;
-      line-height: 22px;
-      margin-bottom: 20px;
-    }
+  @include vp-tablet {
+    max-width: 285px;
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 25px;
   }
 
-  & p {
-    max-width: 900px;
-    margin: 0;
-    margin-bottom: 40px;
+  @include vp-mobile {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.contact-form__text-content p {
+  max-width: 900px;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+
+  @include vp-tablet {
+    max-width: 300px;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 24px;
-    word-wrap: break-word;
+    margin-bottom: 25px;
+  }
 
-    @include vp-tablet {
-      max-width: 300px;
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 25px;
-    }
-
-    @include vp-mobile {
-      font-size: 12px;
-      line-height: 18px;
-      margin-bottom: 20px;
-    }
+  @include vp-mobile {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 20px;
   }
 }
 
@@ -141,7 +141,7 @@
   height: 56px;
   margin-left: 0;
   padding: 20px 30px;
-  border: 1px solid rgba(2, 102, 193, 0.10);
+  border: 1px solid rgba(2, 102, 193, 0.1);
   border-radius: 2px;
   font-size: 16px;
   font-style: normal;
@@ -203,17 +203,17 @@
   font-weight: 500;
   line-height: 16px;
 
-  & span {
-    width: 140px;
-    word-wrap: break-word;
-
-    @include vp-mobile {
-      width: 250px;
-    }
-  }
-
   @include vp-tablet {
     width: 100%;
     align-self: center;
+  }
+}
+
+.contact-form__submit span {
+  width: 140px;
+  word-wrap: break-word;
+
+  @include vp-mobile {
+    width: 250px;
   }
 }

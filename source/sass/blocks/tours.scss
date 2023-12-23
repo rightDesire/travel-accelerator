@@ -28,17 +28,84 @@
   &::after {
     content: "Ближайшие туры";
   }
+}
 
-  & span {
-    max-width: 550px;
-    word-wrap: break-word;
+.tours__title span {
+  max-width: 550px;
+  word-wrap: break-word;
 
-    @include vp-mobile {
-      max-width: 205px;
-    }
+  @include vp-mobile {
+    max-width: 205px;
   }
 }
 
 .tours__wrapper {
   position: relative;
+}
+
+.tours__btn {
+  top: 0;
+  left: unset;
+  transform: translateY(-37%); // Подгон
+
+  &--next {
+    right: 0;
+  }
+
+  &--prev {
+    right: 41px;
+  }
+}
+
+.tours__btn--next svg {
+  scale: (-1);
+}
+
+.tours__all-slides-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.tours__all-slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  padding: 10px;
+  border: none;
+  color: $color-main-text;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include hover-focus {
+    outline: none;
+    color: $color-active-btn;
+  }
+
+  @include active {
+    color: $color-main-additional;
+  }
+
+  &:disabled {
+    color: $color-main-additional;
+  }
+}
+
+.tours__all-slides span {
+  max-width: 240px;
+  word-wrap: break-word;
+}
+
+.tours__all-slides:disabled .tours__svg-wrapper {
+  opacity: 0.2;
+}
+
+.tours__svg-wrapper {
+  width: 9px;
+  height: 14px;
 }

@@ -13,13 +13,13 @@
     left: 50%;
     transform: translateX(-50%);
   }
+}
 
-  & span {
-    max-width: 400px;
-    word-wrap: break-word;
+.advantages__title span {
+  max-width: 400px;
+  word-wrap: break-word;
 
-    @include vp-mobile {
-      max-width: 290px;
-    }
+  @include vp-mobile {
+    max-width: 290px;
   }
 }

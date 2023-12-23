@@ -3,6 +3,10 @@
   margin-top: 46px;
   margin-bottom: 3px;
 
+  @include vp-tablet {
+    margin-bottom: 0;
+  }
+
   @include vp-mobile {
     height: 260px;
     margin: 0 15px;

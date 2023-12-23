@@ -58,17 +58,19 @@ const breakpointsTraining = {
     allowTouchMove: false,
     slidesPerView: 4,
     spaceBetween: 20,
+    initialSlide: 0,
   },
   [vpTablet]: {
     allowTouchMove: true,
     slidesPerView: 3,
     spaceBetween: 20,
+    initialSlide: 0,
   },
   [vpMobile]: {
     allowTouchMove: true,
     slidesPerView: 1,
-    initialSlide: 2,
     spaceBetween: 0,
+    initialSlide: 2,
   },
 };
 

@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 127px;
     padding: 32px 20px;
     color: $color-default-white;
     background-color: $color-main-additional;
@@ -50,7 +51,6 @@
         "burger logo"
         "burger contact";
       row-gap: 14px;
-      padding: 15px;
     }
   }
 
@@ -59,7 +59,6 @@
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    // padding-left: 33px;
     padding-right: 30px;
     color: $color-default-white;
 
@@ -172,7 +171,7 @@
       left: 0;
       opacity: 0;
       margin: 0;
-      padding: 30px 45px 70px 45px;
+      padding: 30px 45px 70px;
       position: absolute;
       pointer-events: none;
       top: 100%;
@@ -185,7 +184,7 @@
 
 
     @include vp-mobile {
-      padding: 15px 15px 50px 15px;
+      padding: 15px 15px 50px;
     }
   }
 
@@ -242,7 +241,7 @@
     display: block;
     max-width: inherit;
     color: $color-default-white;
-    padding: 3px 3px; // Подгон
+    padding: 3px; // Подгон
     border: 1px solid transparent;
     word-wrap: break-word;
     transition: color 0.3s ease;
@@ -360,7 +359,6 @@
     transition: opacity 0.3s ease;
     pointer-events: none;
     position: absolute;
-    // right: 0;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -377,10 +375,6 @@
   @include vp-tablet {
     padding: 0;
   }
-}
-
-.header__wrapper {
-  height: 127px;
 }
 
 .header__burger-wrapper,

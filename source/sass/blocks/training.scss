@@ -36,14 +36,14 @@
   @include vp-mobile {
     margin-bottom: 18px;
   }
+}
 
-  & span {
-    max-width: 550px;
-    word-wrap: break-word;
+.training__title span {
+  max-width: 550px;
+  word-wrap: break-word;
 
-    @include vp-mobile {
-      max-width: 205px;
-    }
+  @include vp-mobile {
+    max-width: 205px;
   }
 }
 
@@ -51,29 +51,27 @@
   content: "Обучение";
 }
 
-.training__text-content {
-  & p {
-    max-width: 900px;
-    margin: 0;
-    margin-bottom: 56px;
-    color: $color-main-text;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+.training__text-content p {
+  max-width: 900px;
+  margin: 0;
+  margin-bottom: 56px;
+  color: $color-main-text;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 0.3); // Плохо видно на планшетных экранах
+  border-radius: 10px;
 
-    @include vp-tablet {
-      max-width: 600px;
-    }
+  @include vp-tablet {
+    max-width: 600px;
+  }
 
-    @include vp-mobile {
-      margin-bottom: 25px;
-      font-size: 14px;
-      line-height: 20px;
-    }
+  @include vp-mobile {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -88,17 +86,17 @@
   font-weight: 700;
   line-height: 21px;
 
-  & span {
-    max-width: 500px;
-    word-wrap: break-word;
-
-    @include vp-mobile {
-      max-width: 201px;
-    }
-  }
-
   @include vp-mobile {
     font-size: 19px;// С font-size из фигмы текст не помещается
+  }
+}
+
+.training__swiper-title span {
+  max-width: 500px;
+  word-wrap: break-word;
+
+  @include vp-mobile {
+    max-width: 201px;
   }
 }
 
@@ -110,15 +108,6 @@
   line-height: 21px;
   margin-bottom: 23px;
 
-  & span {
-    max-width: 500px;
-    word-wrap: break-word;
-
-    @include vp-mobile {
-      max-width: 201px;
-    }
-  }
-
   @include vp-tablet {
     margin-bottom: 44px;
     font-size: 18px;
@@ -129,6 +118,15 @@
     margin-bottom: 25px;
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+.training__process-title span {
+  max-width: 500px;
+  word-wrap: break-word;
+
+  @include vp-mobile {
+    max-width: 201px;
   }
 }
 
@@ -145,4 +143,22 @@
   @include vp-mobile {
     display: none;
   }
+}
+
+.training__btn {
+  top: 0;
+  left: unset;
+  transform: translateY(-37%) translateX(-1px); // Подгон
+
+  &--next {
+    right: 0;
+  }
+
+  &--prev {
+    right: 41px;
+  }
+}
+
+.training__btn--next svg {
+  scale: (-1);
 }

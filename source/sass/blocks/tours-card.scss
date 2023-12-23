@@ -109,10 +109,6 @@
   text-align: start;
   word-wrap: break-word;
 
-  & span {
-    max-width: 250px;
-  }
-
   &::after {
     content: "";
     position: relative;
@@ -123,6 +119,10 @@
     background-color: $color-default-white;
     opacity: 0.2;
   }
+}
+
+.tours-card__title span {
+  max-width: 250px;
 }
 
 .tours-card__details {

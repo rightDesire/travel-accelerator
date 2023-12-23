@@ -1,6 +1,10 @@
 .gallery-card {
   height: 450px;
 
+  @include vp-mobile {
+    height: 260px;
+  }
+
   &--img-one {
     width: 275px;
 
@@ -14,6 +18,9 @@
   }
 
   &--img-multiple {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
     width: 298px;
 
     @include vp-tablet {
@@ -27,6 +34,8 @@
 }
 
 .gallery-card__img-wrapper {
+  width: inherit;
+  height: inherit;
   pointer-events: none;
 }
 
@@ -34,10 +43,4 @@
   width: 100%;
   min-height: 100%;
   object-fit: cover;
-}
-
-.gallery-card--img-multiple {
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
 }
