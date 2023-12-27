@@ -336,6 +336,11 @@
     border: 1px solid #ffffff;
     background: rgba(255, 255, 255, 0.5);
   }
+
+  @media (max-width: 767px) {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  }
 }
 button.swiper-pagination-bullet {
   border: none;

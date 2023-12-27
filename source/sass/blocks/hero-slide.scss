@@ -23,9 +23,14 @@
   padding-bottom: 80px;
 
   @include vp-tablet {
-    justify-content: center;
-    text-align: center;
+    justify-content: start; // Проверка
     padding-top: 130px;
+    text-align: center;
+  }
+
+  @include vp-mobile {
+    padding-top: 42px; // Подгон
+    row-gap: 50px;
   }
 }
 
@@ -39,6 +44,14 @@
   min-height: 100%;
   object-fit: cover;
   z-index: -1;
+
+  @include vp-tablet {
+    top: unset; // Подгон
+  }
+
+  @include vp-mobile {
+    // transform: translateY();
+  }
 }
 
 .hero-slide__text-content {
@@ -63,6 +76,7 @@
   @include vp-tablet {
     max-width: 590px;
     align-self: center;
+    margin-bottom: 15px;
     font-size: 56px;
     line-height: 56px;
   }
@@ -84,14 +98,16 @@
   word-wrap: break-word;
 
   @include vp-tablet {
-    max-width: 500px;
+    max-width: 474px; // Подгон
     align-self: center;
+    margin-bottom: 25px;
     font-size: 17px;
     line-height: 24px;
   }
 
   @include vp-mobile {
-    max-width: 290px;
+    max-width: 270px; // Подгон
+    margin-bottom: 10px;
     font-size: 15px;
     line-height: 20px;
   }
@@ -108,6 +124,10 @@
 
   @include vp-tablet {
     align-self: center;
+  }
+
+  @include vp-mobile {
+    margin-bottom: 0;
   }
 
   &--disabled {
