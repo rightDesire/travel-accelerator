@@ -4,6 +4,7 @@
 
   @include vp-tablet {
     padding: 45px 0;
+    padding-top: 44px; // Подгон
   }
 
   @include vp-mobile {
@@ -18,8 +19,14 @@
   pointer-events: none;
   z-index: -1000;
 
+  @include vp-tablet {
+    width: 602px;
+    height: 1364px;
+  }
+
   @include vp-mobile {
-    width: 346px;
+    top: 115px; // Подгон
+    width: 170px; // Подгон
     height: 595px;
   }
 }
@@ -35,6 +42,13 @@
   word-wrap: break-word;
 
   @include vp-mobile {
+    max-width: 217px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  /*При 320 текст не помещается*/
+  @media (max-width: 320px) {
     max-width: 205px;
   }
 }
@@ -99,6 +113,13 @@
 .tours__all-slides span {
   max-width: 240px;
   word-wrap: break-word;
+
+  @include vp-mobile {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+  }
 }
 
 .tours__all-slides:disabled .tours__svg-wrapper {

@@ -1,7 +1,13 @@
 .tours-swiper {
   padding: 53px 0;
+  padding-top: 52px; // Подгон
+
+  @include vp-tablet {
+    padding: 25px 0;
+  }
 
   @include vp-mobile {
-    padding: 26px 0;
+    padding: 25px 0; // Подгон
+    padding-top: 24px; // Подгон
   }
 }

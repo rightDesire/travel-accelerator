@@ -129,17 +129,21 @@
   display: grid;
   grid-template-rows: repeat(2, auto);
   grid-template-columns: repeat(3, auto);
-  column-gap: 22px;
+  column-gap: 23px;
+  min-height: 32px;
   margin: 0;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: 12px;
+
+  @include vp-mobile {
+    column-gap: 25px;
+  }
 }
 
 .tours-card__detail {
   grid-row: 1;
-  padding-bottom: 7px;
   max-width: 85px;
   word-wrap: break-word;
 }
@@ -147,9 +151,15 @@
 .tours-card__description {
   grid-row: 2;
   margin-left: 0;
+  align-self: flex-end;
   max-width: 80px;
   font-size: 13px;
   font-weight: 700;
   line-height: 13px;
   word-wrap: break-word;
+}
+
+.tours-card__description img {
+  max-width: 84px;
+  min-width: 84px;
 }

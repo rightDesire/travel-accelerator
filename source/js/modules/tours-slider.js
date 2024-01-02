@@ -1,4 +1,4 @@
-const initToursSlider = (isLoop, breakpointSettings, initSlide) => {
+const initToursSlider = (isLoop, breakpointSettings) => {
   const swiperContainer = document.querySelector('[data-tours-swiper]');
   const swiperWrapper = swiperContainer.querySelector('[data-tours-swiper-wrapper]');
   const swiperButtonNext = document.querySelector('[data-tours-btn-next]');
@@ -11,7 +11,6 @@ const initToursSlider = (isLoop, breakpointSettings, initSlide) => {
       prevEl: swiperButtonPrev,
     },
     breakpoints: breakpointSettings,
-    initialSlide: initSlide,
   };
 
   let mySwiper = new window.Swiper(swiperContainer, swiperConfig);
