@@ -1,16 +1,21 @@
 .about {
   display: flex;
   position: relative;
-  margin-top: 56px;
+  padding-top: 56px;
+
+  @include vp-tablet {
+    padding-top: 0;
+  }
 
   @include vp-mobile {
     flex-direction: column;
+    padding-bottom: 1px; // Подгон
   }
 }
 
 .about__img-wrapper {
   position: absolute;
-  top: 0;
+  top: 58px; // По-другому реализовать не получилось
   left: 0;
   z-index: -1;
   pointer-events: none;
@@ -59,7 +64,7 @@
 
 .about__wrapper {
   margin-left: 615px;
-  background-color: $color-default-white;
+  background-color: rgba(255, 255, 255, 0.3);
 
   @include vp-tablet {
     margin-left: 408px;
@@ -72,7 +77,7 @@
 
 .about__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 57px;
   font-size: 35px;
   font-style: normal;
   font-weight: 800;
@@ -80,11 +85,16 @@
 
   @include vp-tablet {
     margin-bottom: 36px;
+    margin-left: 6px;
+    min-height: 42px;
     font-size: 25px;
     line-height: 25px;
   }
 
   @include vp-mobile {
+    min-height: 23px;
+    margin-bottom: 25px;
+    margin-left: 0;
     font-size: 22px;
     line-height: 22px;
   }
@@ -110,12 +120,13 @@
   word-wrap: break-word;
 
   @include vp-tablet {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
     font-size: 18px;
     line-height: 18px;
   }
 
   @include vp-mobile {
+    margin-bottom: 13px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -131,10 +142,19 @@
   word-wrap: break-word;
 
   &:not(:last-of-type) {
-    margin-bottom: 25px;
+    margin-bottom: 29px;
+
+    @include vp-mobile {
+      margin-bottom: 27px;
+    }
+  }
+
+  @include vp-tablet {
+    max-width: 263px;
   }
 
   @include vp-mobile {
+    max-width: unset;
     line-height: 20px;
   }
 }
