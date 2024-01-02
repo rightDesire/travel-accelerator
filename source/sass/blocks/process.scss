@@ -6,12 +6,13 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 120px;
+  padding-bottom: 7px;
   overflow-x: hidden; // Не получилось реализовать по-другому
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 6px;
+    bottom: 13px;
     left: 130px;
     display: block;
     width: 100%;
@@ -25,8 +26,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0;
-    row-gap: 55px;
-    max-width: 620px;
+    row-gap: 40px;
+    // max-width: 620px;
     margin: 0;
     margin-right: auto;
     padding: 0 45px;
@@ -40,7 +41,7 @@
       height: 60px;
       background-color: $color-main-additional;
       opacity: 0.2;
-      transform: translateY(-65%) translateX(17px);
+      transform: translateY(-65%) translateX(17px); // Подгон
     }
 
     &::after {
@@ -51,8 +52,11 @@
   @include vp-mobile {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     max-width: 300px;
+    min-height: 219px;
     padding: 0 15px;
+    row-gap: 24px; // Подгон
     column-gap: 25px;
 
     &::before {
@@ -64,7 +68,7 @@
       content: "";
       position: absolute;
       top: 20px;
-      left: 20px;
+      left: 22px;
       display: block;
       width: 1px;
       height: calc(100% - 40px); // По-другому не получилось
@@ -102,7 +106,7 @@
         height: 14px;
         background-color: $color-main-additional;
         border-radius: 50%;
-        margin-bottom: 21px;
+        margin-bottom: 13px;
       }
 
       &::after {
@@ -146,14 +150,21 @@
     max-width: inherit;
     margin-left: 0;
     column-gap: 15px;
+    justify-content: start;
 
     &::after {
       align-self: center;
       margin-top: 0;
+      width: 15px;
+      height: 13px;
     }
 
     &::before {
       content: unset;
+    }
+
+    &:first-child {
+      min-width: auto;
     }
 
     &:first-child::before,
@@ -171,8 +182,8 @@
         content: "";
         position: static;
         align-self: center;
-        width: 14px;
-        height: 14px;
+        width: 15px;
+        height: 13px;
         background-color: $color-main-additional;
         border-radius: 50%;
         margin-bottom: 0;
@@ -195,16 +206,35 @@
   display: flex;
   align-items: start;
   column-gap: 10px;
+
+  @include vp-tablet {
+    margin-bottom: 10px;
+  }
+
+  @include vp-mobile {
+    column-gap: 13px;
+    margin-bottom: 0;
+  }
 }
 
 .process__img-wrapper {
+  @include vp-tablet {
+    padding-top: 2px;
+  }
+
   @include vp-mobile {
     align-self: center;
+    padding-top: 0;
   }
 }
 
 .process__img-wrapper img {
   max-width: unset;
+
+  @include vp-mobile {
+    width: 21px;
+    height: 20px;
+  }
 }
 
 .process__text {

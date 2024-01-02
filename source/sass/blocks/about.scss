@@ -1,6 +1,7 @@
 .about {
   display: flex;
   position: relative;
+  margin-top: 56px;
 
   @include vp-mobile {
     flex-direction: column;

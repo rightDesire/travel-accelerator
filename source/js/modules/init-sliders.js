@@ -21,7 +21,8 @@ const loop = {
 const initSlide = {
   toursDesktop: 6,
   toursTablet: 3,
-  training: 8,
+  trainingDesktop: 8,
+  trainingTablet: 4,
 };
 
 const breakpointsHero = {
@@ -62,13 +63,13 @@ const breakpointsTraining = {
     allowTouchMove: false,
     slidesPerView: 4,
     spaceBetween: 20,
-    initialSlide: 0,
+    initialSlide: initSlide.trainingDesktop,
   },
   [vpTablet]: {
     allowTouchMove: true,
     slidesPerView: 3,
     spaceBetween: 20,
-    initialSlide: 0,
+    initialSlide: initSlide.trainingTablet,
   },
   [vpMobile]: {
     allowTouchMove: true,
@@ -127,7 +128,7 @@ const breakpointsGallery = {
 export const initSliders = () => {
   initHeroSlider(loop.hero, breakpointsHero);
   initToursSlider(loop.tours, breakpointsTours);
-  initTrainingSlider(loop.training, breakpointsTraining, initSlide.training);
+  initTrainingSlider(loop.training, breakpointsTraining);
   initReviewsSlider(loop.reviews, breakpointsReviews);
   initAdvantagesSlider(loop.advantages, breakpointsAdvantages, vpDesktop);
   initGallerySlider(loop.gallery, breakpointsGallery);

@@ -3,9 +3,14 @@
   flex-direction: column;
   row-gap: 15px;
   height: inherit;
-  min-height: 386px;
+  min-height: 356px;
   padding: 15px;
+  background-color: $color-default-white;
   border: 1px solid rgba(2, 102, 193, 0.1);
+
+  @include vp-tablet {
+    padding: 14px;
+  }
 }
 
 .training-card__title {
@@ -39,10 +44,6 @@
   }
 }
 
-.training-card__text-content {
-  // margin-top: auto;
-}
-
 .training-card__text-content p {
   margin: 0;
   font-size: 12px;
@@ -50,4 +51,15 @@
   font-weight: 400;
   line-height: 16px;
   word-wrap: break-word;
+}
+
+.training-card__social {
+  align-self: self-start;
+  width: 24px;
+  height: 24px;
+}
+
+.training-card__social svg {
+  width: 14px;
+  height: 8px;
 }

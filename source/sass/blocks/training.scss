@@ -1,13 +1,15 @@
 .training {
   position: relative;
-  margin-bottom: 56px;
+  padding-top: 20px;
 
   @include vp-tablet {
-    padding-bottom: 45px;
+    padding-top: 63px; // Подгон
+    padding-bottom: 37px; // Подгон
   }
 
   @include vp-mobile {
-    padding-bottom: 20px;
+    padding-top: 27px; // Подгон
+    padding-bottom: 21px; // Подгон
   }
 }
 
@@ -17,12 +19,13 @@
   padding-bottom: 56px;
 
   @include vp-tablet {
-    padding-top: 30px;
-    padding-bottom: 25px;
+    padding-top: 28px;
+    padding-bottom: 27px;
   }
 
   @include vp-mobile {
-    padding-top: 25px;
+    padding-top: 23px; // Подгон
+    padding-bottom: 25px;
   }
 }
 
@@ -30,11 +33,16 @@
   margin-bottom: 37px;
 
   @include vp-tablet {
-    margin-bottom: 26px;
+    min-height: 20px;
+    margin-bottom: 21px;
+    font-size: 25px;
+    line-height: 25px;
   }
 
   @include vp-mobile {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 
@@ -65,11 +73,13 @@
   border-radius: 10px;
 
   @include vp-tablet {
-    max-width: 600px;
+    margin-bottom: 29px;
+    max-width: 530px;
   }
 
   @include vp-mobile {
-    margin-bottom: 25px;
+    max-width: 305px;
+    margin-bottom: 28px;
     font-size: 14px;
     line-height: 20px;
   }
@@ -78,7 +88,7 @@
 .training__swiper-title {
   display: flex;
   justify-content: start;
-  align-items: end; // Не понятно как надо (в фигме)
+  align-items: start; // Не понятно как надо (в фигме)
   min-height: 55px;
   margin: 0;
   font-size: 21px;
@@ -86,16 +96,14 @@
   font-weight: 700;
   line-height: 21px;
 
-  @include vp-mobile {
-    font-size: 19px;// С font-size из фигмы текст не помещается
-  }
 }
 
 .training__swiper-title span {
   max-width: 500px;
   word-wrap: break-word;
 
-  @include vp-mobile {
+  /* Текст не помещается на 320px */
+  @media (max-width: 340px) {
     max-width: 201px;
   }
 }
@@ -106,16 +114,16 @@
   font-style: normal;
   font-weight: 700;
   line-height: 21px;
-  margin-bottom: 23px;
+  margin-bottom: 31px;
 
   @include vp-tablet {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
     font-size: 18px;
     line-height: 18px;
   }
 
   @include vp-mobile {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-size: 16px;
     line-height: 16px;
   }
@@ -156,6 +164,10 @@
 
   &--prev {
     right: 41px;
+  }
+
+  @include vp-mobile {
+    transform: translateY(-46%) translateX(0); // Подгон
   }
 }
 
