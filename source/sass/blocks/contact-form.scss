@@ -125,6 +125,10 @@
 
 .contact-form__form form {
   justify-content: center;
+
+  @include vp-mobile {
+    padding: 0 15px;
+  }
 }
 
 .contact-form__input {

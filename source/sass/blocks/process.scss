@@ -32,18 +32,6 @@
     margin-right: auto;
     padding: 0 45px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 1px;
-      height: 60px;
-      background-color: $color-main-additional;
-      opacity: 0.2;
-      transform: translateY(-65%) translateX(17px); // Подгон
-    }
-
     &::after {
       content: unset;
     }
@@ -98,8 +86,22 @@
   @include vp-tablet {
     max-width: 100%;
 
-    &:nth-child(4n+3),
-    &:nth-child(4n+4) {
+    &:nth-child(4n-2) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        height: 60px;
+        background-color: $color-main-additional;
+        opacity: 0.2;
+        transform: translateY(80%) translateX(6px); // Подгон
+      }
+    }
+
+    &:nth-child(3n),
+    &:nth-child(4n) {
       &::before {
         content: "";
         width: 14px;
@@ -114,11 +116,11 @@
       }
     }
 
-    &:nth-child(4n+3) {
+    &:nth-child(3n) {
       order: 2;
     }
 
-    &:nth-child(4n+4) {
+    &:nth-child(4n) {
       order: 1;
     }
 
@@ -170,6 +172,12 @@
     &:first-child::before,
     &:last-child::after {
       content: unset;
+    }
+
+    &:nth-child(4n-2) {
+      &::before {
+        content: unset;
+      }
     }
 
     &:nth-child(4n+3),

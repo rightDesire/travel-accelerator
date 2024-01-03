@@ -95,12 +95,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: 21px;
-
 }
 
 .training__swiper-title span {
   max-width: 500px;
   word-wrap: break-word;
+
+  @include vp-mobile {
+    max-width: 230px;
+  }
 
   /* Текст не помещается на 320px */
   @media (max-width: 340px) {

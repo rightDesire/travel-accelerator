@@ -1,6 +1,6 @@
 .advantages-card {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
   width: 380px;
@@ -30,19 +30,26 @@
     min-width: 300px;
     min-height: 230px;
     padding: 30px 20px;
+    padding-bottom: 29px; // Подгон
   }
 
   @include vp-mobile {
     width: auto;
     padding: 20px 10px;
+    padding-top: 19px; // Подгон
+    padding-bottom: 19px; // Подгон
   }
 }
 
 .advantages-card__img-wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 27px; // Подгон
 
   @include vp-tablet {
     margin-bottom: 25px;
+  }
+
+  @include vp-mobile {
+    margin-bottom: 20px;
   }
 }
 
@@ -61,8 +68,14 @@
   }
 }
 
+.advantages-card__text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .advantages-card__text-content h3 {
-  max-width: 300px;
+  max-width: 340px;
   margin: 0;
   margin-bottom: 15px;
   font-size: 18px;
@@ -73,18 +86,20 @@
 
   @include vp-tablet {
     max-width: 284px;
+    margin-bottom: 14px; // Подгон
     font-size: 16px;
     line-height: 16px;
   }
 
   @include vp-mobile {
+    margin-bottom: 15px;
     font-size: 14px;
     line-height: 14px;
   }
 }
 
 .advantages-card__text-content p {
-  max-width: 300px;
+  max-width: 340px;
   margin: 0;
   font-size: 14px;
   font-style: normal;
@@ -93,7 +108,7 @@
   word-wrap: break-word;
 
   @include vp-mobile {
-    max-width: 284px;
+    max-width: 300px;
     font-size: 12px;
     line-height: 18px;
   }
