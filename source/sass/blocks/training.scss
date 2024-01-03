@@ -105,8 +105,8 @@
     max-width: 230px;
   }
 
-  /* Текст не помещается на 320px */
-  @media (max-width: 340px) {
+  // Текст не помещается на 320px
+  @media (width <= 320px) {
     max-width: 201px;
   }
 }
