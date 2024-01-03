@@ -16,6 +16,7 @@
     flex-direction: column;
     width: auto;
     padding: 20px;
+    padding-bottom: 16px; // Подгон
     box-shadow: none;
   }
 }
@@ -44,8 +45,12 @@
 }
 
 .reviews-card__text-content {
+  @include vp-tablet {
+    padding-top: 3px;
+  }
+
   @include vp-mobile {
-    padding-top: 20px;
+    padding-top: 19px; // Подгон
     padding-bottom: 15px;
   }
 }
@@ -59,14 +64,14 @@
   line-height: 22px;
   word-wrap: break-word;
 
-  &:not(:last-of-type) {
-    margin-bottom: 10px;
-  }
-
   @include vp-tablet {
     max-width: 299px;
     font-size: 12px;
     line-height: 18px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
   }
 
   @include vp-mobile {
@@ -106,4 +111,9 @@
 
 .reviews-card__info {
   margin-top: auto;
+  padding-bottom: 10px;
+
+  @include vp-tablet {
+    padding-bottom: 5px;
+  }
 }
