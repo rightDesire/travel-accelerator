@@ -1,5 +1,9 @@
 .gallery-card {
-  height: 450px;
+  height: 449px; // Подгон
+
+  @include vp-tablet {
+    height: 450px;
+  }
 
   @include vp-mobile {
     height: 260px;

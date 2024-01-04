@@ -35,6 +35,7 @@
 
   @include vp-mobile {
     width: auto;
+    min-width: 290px;
     padding: 20px 10px;
     padding-top: 19px; // Подгон
     padding-bottom: 19px; // Подгон
@@ -98,6 +99,12 @@
   }
 }
 
+.advantages-card--odd-card > .advantages-card__text-content p {
+  @include vp-tablet {
+    max-width: 340px;
+  }
+}
+
 .advantages-card__text-content p {
   max-width: 340px;
   margin: 0;
@@ -106,6 +113,10 @@
   font-weight: 400;
   line-height: 22px;
   word-wrap: break-word;
+
+  @include vp-tablet {
+    max-width: 292px;
+  }
 
   @include vp-mobile {
     max-width: 300px;

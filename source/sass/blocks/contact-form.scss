@@ -129,6 +129,11 @@
   @include vp-mobile {
     padding: 0 15px;
   }
+
+  // При 320 формы не помещаются
+  @include vp-320 {
+    padding: 0;
+  }
 }
 
 .contact-form__input {

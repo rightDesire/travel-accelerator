@@ -1,10 +1,10 @@
 .gallery-swiper {
-  height: 450px;
-  margin-top: 46px;
-  margin-bottom: 3px;
+  height: 449px; // Подгон
+  margin-top: 45px;
 
   @include vp-tablet {
-    margin-bottom: 0;
+    height: 450px;
+    margin-top: 21px;
   }
 
   @include vp-mobile {

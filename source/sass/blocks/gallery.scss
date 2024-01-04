@@ -1,8 +1,30 @@
+.gallery {
+  padding-bottom: 3px;
+
+  @include vp-tablet {
+    padding-bottom: 0;
+  }
+}
+
 .gallery__title {
-  margin-bottom: 27px;
+  min-height: 58px;
+  margin-bottom: 24px;
 
   &::after {
     content: "Фотогалерея";
+  }
+
+  @include vp-tablet {
+    min-height: 43px;
+    margin-bottom: 17px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-mobile {
+    min-height: 26px;
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 
@@ -63,6 +85,12 @@
   display: flex;
   column-gap: 4px;
   height: 35px;
+  margin-bottom: 2px;
+
+  @include vp-tablet {
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
 
   @include vp-mobile {
     align-self: end;
@@ -72,6 +100,10 @@
 .gallery__btn {
   position: static;
   transform: translateY(22px);
+
+  @include vp-tablet {
+    width: 34px;
+  }
 }
 
 .gallery__btn--next svg {

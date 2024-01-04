@@ -106,7 +106,7 @@
   }
 
   // Текст не помещается на 320px
-  @media (width <= 320px) {
+  @include vp-320 {
     max-width: 201px;
   }
 }
