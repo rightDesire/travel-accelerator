@@ -1,7 +1,0 @@
-.hero {
-  background-color: $color-disabled-background; // Подстраховка, пока background-image не загрузиться
-
-  @include vp-tablet {
-    transform: translateY(-2px); // Устраняет зазор
-  }
-}
