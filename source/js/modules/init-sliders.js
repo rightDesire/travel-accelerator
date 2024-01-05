@@ -8,6 +8,7 @@ import {initGallerySlider} from './gallery-slider';
 const vpDesktop = 1200;
 const vpTablet = 768;
 const vpMobile = 320;
+const vpZero = 0;
 
 const loop = {
   hero: false, // Тестируем
@@ -118,7 +119,7 @@ const breakpointsGallery = {
     slidesPerView: 'auto',
     spaceBetween: 5,
   },
-  [vpMobile]: {
+  [vpZero]: {
     allowTouchMove: true,
     slidesPerView: 'auto',
     spaceBetween: 3,
