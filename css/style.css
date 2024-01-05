@@ -2596,7 +2596,6 @@ button,
 
 .hero {
   background-color: #999999;
-  color: #ffffff;
 }
 
 .hero-swiper {
@@ -4459,6 +4458,12 @@ button,
   .header__burger-wrapper,
   .header__contact-wrapper {
     width: 226px;
+  }
+
+  .hero {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
   }
 
   .hero-swiper {
