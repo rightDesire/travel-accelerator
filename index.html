@@ -12,6 +12,20 @@
     <link rel="icon" href="img/favicons/icon.svg">
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <!-- Предзагрузка -->
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/vendor.min.js" as="script">
+    <link rel="preload" href="js/main.min.js" as="script">
+    <link rel="preload" as="image" href="img/content/caucasus-background-desktop@1x.webp"
+      imagesrcset="img/content/caucasus-background-desktop@1x.webp, img/content/caucasus-background-desktop@2x.webp 2x" media="(min-width: 1200px)">
+    <link rel="preload" as="image" href="img/content/caucasus-background-tablet@1x.webp"
+      imagesrcset="img/content/caucasus-background-tablet@1x.webp, img/content/caucasus-background-tablet@2x.webp 2x" media="(min-width: 768px) and (max-width: 1199px)">
+    <link rel="preload" as="image" href="img/content/caucasus-background-mobile@1x.webp"
+      imagesrcset="img/content/caucasus-background-mobile@1x.webp, img/content/caucasus-background-mobile@2x.webp 2x" media="(min-width: 1px) and (max-width: 767px)">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <h1 class="visually-hidden">Организация походов в горы LIFETOUR.</h1>
@@ -129,7 +143,7 @@
 
                       <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/kamchatka-background-mobile@1x.jpg 1x, img/content/kamchatka-background-mobile@2x.jpg 2x">
                       <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/kamchatka-background-tablet@1x.jpg 1x, img/content/kamchatka-background-tablet@2x.jpg 2x">
-                      <img src="img/content/kamchatka-background-desktop@1x.jpg" srcset="img/content/kamchatka-background-desktop@2x.jpg 2x" width="1440" height="800" alt="">
+                      <img src="img/content/kamchatka-background-desktop@1x.jpg" srcset="img/content/kamchatka-background-desktop@2x.jpg 2x" width="1440" height="800" loading="lazy" alt="">
                     </picture>
                   </div>
                   <div class="hero-slide__wrapper container">
@@ -142,11 +156,11 @@
                     <a class="hero-slide__btn btn" href="#"><span>Смотреть тур</span></a>
                     <div class="hero-slide__details">
                       <p class="hero-slide__detail hero-slide__detail--days">
-                        <img src="img/svg/moon.svg" width="12" height="12" alt="">
+                        <img src="img/svg/moon.svg" width="12" height="12" loading="lazy" alt="">
                         <span class="hero-slide__detail-text">9 дней/10 ночей</span>
                       </p>
                       <p class="hero-slide__detail hero-slide__detail--level">
-                        <img src="img/svg/level.svg" width="12" height="12" alt="">
+                        <img src="img/svg/level.svg" width="12" height="12" loading="lazy" alt="">
                         <span class="hero-slide__detail-text">Средняя сложность</span>
                       </p>
                     </div>
@@ -156,7 +170,7 @@
                         <source type="image/webp" srcset="img/content/kamchatka-img-desktop@1x.webp 1x, img/content/kamchatka-img-desktop@2x.webp 2x">
 
                         <source media="(max-width: 1199px)" type="image/png" srcset="img/content/kamchatka-img-tablet@1x.png 1x, img/content/kamchatka-img-tablet@2x.png 2x">
-                        <img src="img/content/kamchatka-img-desktop@1x.png" srcset="img/content/kamchatka-img-desktop@2x.png 2x" width="410" height="459" alt="Фотокарточки с похода.">
+                        <img src="img/content/kamchatka-img-desktop@1x.png" srcset="img/content/kamchatka-img-desktop@2x.png 2x" width="410" height="459" loading="lazy" alt="Фотокарточки с похода.">
                       </picture>
                     </div>
                   </div>
@@ -170,7 +184,7 @@
 
                       <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/altai-background-mobile@1x.jpg 1x, img/content/altai-background-mobile@2x.jpg 2x">
                       <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/altai-background-tablet@1x.jpg 1x, img/content/altai-background-tablet@2x.jpg 2x">
-                      <img src="img/content/altai-background-desktop@1x.jpg" srcset="img/content/altai-background-desktop@2x.jpg 2x" width="1440" height="800" alt="">
+                      <img src="img/content/altai-background-desktop@1x.jpg" srcset="img/content/altai-background-desktop@2x.jpg 2x" width="1440" height="800" loading="lazy" alt="">
                     </picture>
                   </div>
                   <div class="hero-slide__wrapper container">
@@ -183,11 +197,11 @@
                     <a class="hero-slide__btn btn" href="#"><span>Смотреть тур</span></a>
                     <div class="hero-slide__details">
                       <p class="hero-slide__detail hero-slide__detail--days">
-                        <img src="img/svg/moon.svg" width="12" height="12" alt="">
+                        <img src="img/svg/moon.svg" width="12" height="12" loading="lazy" alt="">
                         <span class="hero-slide__detail-text">8 дней/7 ночей</span>
                       </p>
                       <p class="hero-slide__detail hero-slide__detail--level">
-                        <img src="img/svg/level.svg" width="12" height="12" alt="">
+                        <img src="img/svg/level.svg" width="12" height="12" loading="lazy" alt="">
                         <span class="hero-slide__detail-text">Легкая сложность</span>
                       </p>
                     </div>
@@ -196,7 +210,7 @@
                         <picture>
                           <source type="image/webp" srcset="img/content/altai-poster-desktop@1x.webp 1x, img/content/altai-poster-desktop@2x.webp 2x">
 
-                          <img src="img/content/altai-poster-desktop@1x.jpg" srcset="img/content/altai-poster-desktop@2x.jpg 2x" width="340" height="320" alt="Постер к аудио.">
+                          <img src="img/content/altai-poster-desktop@1x.jpg" srcset="img/content/altai-poster-desktop@2x.jpg 2x" width="340" height="320" loading="lazy" alt="Постер к аудио.">
                         </picture>
                         <button class="hero-slide__audio-btn" data-altai-button="" type="button" aria-label="Воспроизвести.">
                           <span class="hero-slide__svg hero-slide__svg--default">
@@ -229,7 +243,7 @@
 
               <source media="(max-width: 767px)" type="image/png" srcset="img/content/tours-clouds-mobile@1x.png 1x, img/content/tours-clouds-mobile@2x.png 2x">
               <source media="(max-width: 767px)" type="image/png" srcset="img/content/tours-clouds-mobile@1x.png 1x, img/content/tours-clouds-mobile@2x.png 2x">
-              <img src="img/content/tours-clouds-desktop@1x.png" srcset="img/content/tours-clouds-desktop@2x.png 2x" width="602" height="1630" alt="">
+              <img src="img/content/tours-clouds-desktop@1x.png" srcset="img/content/tours-clouds-desktop@2x.png 2x" width="602" height="1630" loading="lazy" alt="">
             </picture>
           </div>
           <div class="tours__container container">
@@ -246,22 +260,22 @@
 
                         <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-elbrus-mobile@1x.jpg 1x, img/content/tours-elbrus-mobile@2x.jpg 2x">
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-elbrus-tablet@1x.jpg 1x, img/content/tours-elbrus-tablet@2x.jpg 2x">
-                        <img src="img/content/tours-elbrus-desktop@1x.jpg" srcset="img/content/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на Эльбрус.">
+                        <img src="img/content/tours-elbrus-desktop@1x.jpg" srcset="img/content/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416" loading="lazy" alt="Вид на Эльбрус.">
                       </picture>
                     </div>
                     <div class="tours-card__container">
                       <div class="tours-card__row-info">
                         <address class="tours-card__address">
-                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <img src="img/svg/location.svg" width="16" height="16" loading="lazy" alt="">
                           <span class="tours-card__address-text">Кавказ</span>
                         </address>
                         <div class="tours-card__durations">
                           <span class="tours-card__duration tours-card__duration--day">
-                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <img src="img/svg/sun.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">4 дня</span>
                           </span>
                           <span class="tours-card__duration tours-card__duration--night">
-                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <img src="img/svg/moon.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">3 ночи</span>
                           </span>
                         </div>
@@ -274,7 +288,7 @@
                           Сложность:
                         </dt>
                         <dd class="tours-card__description">
-                          <img src="img/svg/stars-elbrus.svg" width="84" height="16" alt="">
+                          <img src="img/svg/stars-elbrus.svg" width="84" height="16" loading="lazy" alt="">
                         </dd>
 
                         <dt class="tours-card__detail">
@@ -302,22 +316,22 @@
 
                         <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-beluha-mobile@1x.jpg 1x, img/content/tours-beluha-mobile@2x.jpg 2x"> -->
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-beluha-tablet@1x.jpg 1x, img/content/tours-beluha-tablet@2x.jpg 2x">
-                        <img src="img/content/tours-beluha-desktop@1x.jpg" srcset="img/content/tours-beluha-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на подножье Белухи.">
+                        <img src="img/content/tours-beluha-desktop@1x.jpg" srcset="img/content/tours-beluha-desktop@2x.jpg 2x" width="380" height="416" loading="lazy" alt="Вид на подножье Белухи.">
                       </picture>
                     </div>
                     <div class="tours-card__container">
                       <div class="tours-card__row-info">
                         <address class="tours-card__address">
-                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <img src="img/svg/location.svg" width="16" height="16" loading="lazy" alt="">
                           <span class="tours-card__address-text">Алтай</span>
                         </address>
                         <div class="tours-card__durations">
                           <span class="tours-card__duration tours-card__duration--day">
-                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <img src="img/svg/sun.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">14 дней</span>
                           </span>
                           <span class="tours-card__duration tours-card__duration--night">
-                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <img src="img/svg/moon.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">13 ночей</span>
                           </span>
                         </div>
@@ -330,7 +344,7 @@
                           Сложность:
                         </dt>
                         <dd class="tours-card__description">
-                          <img src="img/svg/stars-beluha.svg" width="84" height="16" alt="">
+                          <img src="img/svg/stars-beluha.svg" width="84" height="16" loading="lazy" alt="">
                         </dd>
 
                         <dt class="tours-card__detail">
@@ -358,22 +372,22 @@
 
                         <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-fisht-mobile@1x.jpg 1x, img/content/tours-fisht-mobile@2x.jpg 2x">
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-fisht-tablet@1x.jpg 1x, img/content/tours-fisht-tablet@2x.jpg 2x"> -->
-                        <img src="img/content/tours-fisht-desktop@1x.jpg" srcset="img/content/tours-fisht-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на Фишт.">
+                        <img src="img/content/tours-fisht-desktop@1x.jpg" srcset="img/content/tours-fisht-desktop@2x.jpg 2x" width="380" height="416" loading="lazy" alt="Вид на Фишт.">
                       </picture>
                     </div>
                     <div class="tours-card__container">
                       <div class="tours-card__row-info">
                         <address class="tours-card__address">
-                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <img src="img/svg/location.svg" width="16" height="16" loading="lazy" alt="">
                           <span class="tours-card__address-text">Кавказ</span>
                         </address>
                         <div class="tours-card__durations">
                           <span class="tours-card__duration tours-card__duration--day">
-                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <img src="img/svg/sun.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">7 дней</span>
                           </span>
                           <span class="tours-card__duration tours-card__duration--night">
-                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <img src="img/svg/moon.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">6 ночей</span>
                           </span>
                         </div>
@@ -386,7 +400,7 @@
                           Сложность:
                         </dt>
                         <dd class="tours-card__description">
-                          <img src="img/svg/stars-fisht.svg" width="84" height="16" alt="">
+                          <img src="img/svg/stars-fisht.svg" width="84" height="16" loading="lazy" alt="">
                         </dd>
 
                         <dt class="tours-card__detail">
@@ -414,22 +428,22 @@
 
                         <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-elbrus-mobile@1x.jpg 1x, img/content/tours-elbrus-mobile@2x.jpg 2x">
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-elbrus-tablet@1x.jpg 1x, img/content/tours-elbrus-tablet@2x.jpg 2x">
-                        <img src="img/content/tours-elbrus-desktop@1x.jpg" srcset="img/content/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на Эльбрус.">
+                        <img src="img/content/tours-elbrus-desktop@1x.jpg" srcset="img/content/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416" loading="lazy" alt="Вид на Эльбрус.">
                       </picture>
                     </div>
                     <div class="tours-card__container">
                       <div class="tours-card__row-info">
                         <address class="tours-card__address">
-                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <img src="img/svg/location.svg" width="16" height="16" loading="lazy" alt="">
                           <span class="tours-card__address-text">Кавказ</span>
                         </address>
                         <div class="tours-card__durations">
                           <span class="tours-card__duration tours-card__duration--day">
-                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <img src="img/svg/sun.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">4 дня</span>
                           </span>
                           <span class="tours-card__duration tours-card__duration--night">
-                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <img src="img/svg/moon.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">3 ночи</span>
                           </span>
                         </div>
@@ -442,7 +456,7 @@
                           Сложность:
                         </dt>
                         <dd class="tours-card__description">
-                          <img src="img/svg/stars-elbrus.svg" width="84" height="16" alt="">
+                          <img src="img/svg/stars-elbrus.svg" width="84" height="16" loading="lazy" alt="">
                         </dd>
 
                         <dt class="tours-card__detail">
@@ -470,22 +484,22 @@
 
                         <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-beluha-mobile@1x.jpg 1x, img/content/tours-beluha-mobile@2x.jpg 2x"> -->
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-beluha-tablet@1x.jpg 1x, img/content/tours-beluha-tablet@2x.jpg 2x">
-                        <img src="img/content/tours-beluha-desktop@1x.jpg" srcset="img/content/tours-beluha-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на подножье Белухи.">
+                        <img src="img/content/tours-beluha-desktop@1x.jpg" srcset="img/content/tours-beluha-desktop@2x.jpg 2x" width="380" height="416" loading="lazy" alt="Вид на подножье Белухи.">
                       </picture>
                     </div>
                     <div class="tours-card__container">
                       <div class="tours-card__row-info">
                         <address class="tours-card__address">
-                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <img src="img/svg/location.svg" width="16" height="16" loading="lazy" alt="">
                           <span class="tours-card__address-text">Алтай</span>
                         </address>
                         <div class="tours-card__durations">
                           <span class="tours-card__duration tours-card__duration--day">
-                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <img src="img/svg/sun.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">14 дней</span>
                           </span>
                           <span class="tours-card__duration tours-card__duration--night">
-                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <img src="img/svg/moon.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">13 ночей</span>
                           </span>
                         </div>
@@ -498,7 +512,7 @@
                           Сложность:
                         </dt>
                         <dd class="tours-card__description">
-                          <img src="img/svg/stars-beluha.svg" width="84" height="16" alt="">
+                          <img src="img/svg/stars-beluha.svg" width="84" height="16" loading="lazy" alt="">
                         </dd>
 
                         <dt class="tours-card__detail">
@@ -526,22 +540,22 @@
 
                         <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/tours-fisht-mobile@1x.jpg 1x, img/content/tours-fisht-mobile@2x.jpg 2x">
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/tours-fisht-tablet@1x.jpg 1x, img/content/tours-fisht-tablet@2x.jpg 2x"> -->
-                        <img src="img/content/tours-fisht-desktop@1x.jpg" srcset="img/content/tours-fisht-desktop@2x.jpg 2x" width="380" height="416" alt="Вид на Фишт.">
+                        <img src="img/content/tours-fisht-desktop@1x.jpg" srcset="img/content/tours-fisht-desktop@2x.jpg 2x" width="380" height="416" loading="lazy" alt="Вид на Фишт.">
                       </picture>
                     </div>
                     <div class="tours-card__container">
                       <div class="tours-card__row-info">
                         <address class="tours-card__address">
-                          <img src="img/svg/location.svg" width="16" height="16" alt="">
+                          <img src="img/svg/location.svg" width="16" height="16" loading="lazy" alt="">
                           <span class="tours-card__address-text">Кавказ</span>
                         </address>
                         <div class="tours-card__durations">
                           <span class="tours-card__duration tours-card__duration--day">
-                            <img src="img/svg/sun.svg" width="20" height="20" alt="">
+                            <img src="img/svg/sun.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">7 дней</span>
                           </span>
                           <span class="tours-card__duration tours-card__duration--night">
-                            <img src="img/svg/moon.svg" width="20" height="20" alt="">
+                            <img src="img/svg/moon.svg" width="20" height="20" loading="lazy" alt="">
                             <span class="tours-card__duration-text">6 ночей</span>
                           </span>
                         </div>
@@ -554,7 +568,7 @@
                           Сложность:
                         </dt>
                         <dd class="tours-card__description">
-                          <img src="img/svg/stars-fisht.svg" width="84" height="16" alt="">
+                          <img src="img/svg/stars-fisht.svg" width="84" height="16" loading="lazy" alt="">
                         </dd>
 
                         <dt class="tours-card__detail">
@@ -619,7 +633,7 @@
 
                         <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-2-mobile@1x.jpg 1x, img/content/instructor-2-mobile@2x.jpg 2x"> -->
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-2-tablet@1x.jpg 1x, img/content/instructor-2-tablet@2x.jpg 2x">
-                        <img src="img/content/instructor-2-desktop@1x.jpg" srcset="img/content/instructor-2-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Александр Прокофьев.">
+                        <img src="img/content/instructor-2-desktop@1x.jpg" srcset="img/content/instructor-2-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Инструктор Александр Прокофьев.">
                       </picture>
                     </div>
                     <div class="training-card__row-wrapper">
@@ -649,7 +663,7 @@
 
                         <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-3-mobile@1x.jpg 1x, img/content/instructor-3-mobile@2x.jpg 2x"> -->
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-3-tablet@1x.jpg 1x, img/content/instructor-3-tablet@2x.jpg 2x">
-                        <img src="img/content/instructor-3-desktop@1x.jpg" srcset="img/content/instructor-3-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Светлана Афиногенова.">
+                        <img src="img/content/instructor-3-desktop@1x.jpg" srcset="img/content/instructor-3-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Инструктор Светлана Афиногенова.">
                       </picture>
                     </div>
                     <div class="training-card__row-wrapper">
@@ -679,7 +693,7 @@
 
                         <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-1-mobile@1x.jpg 1x, img/content/instructor-1-mobile@2x.jpg 2x">
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-1-tablet@1x.jpg 1x, img/content/instructor-1-tablet@2x.jpg 2x">
-                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Надежда Колесниченко.">
+                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Инструктор Надежда Колесниченко.">
                       </picture>
                     </div>
                     <div class="training-card__row-wrapper">
@@ -709,7 +723,7 @@
 
                         <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-4-mobile@1x.jpg 1x, img/content/instructor-4-mobile@2x.jpg 2x">
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-4-tablet@1x.jpg 1x, img/content/instructor-4-tablet@2x.jpg 2x"> -->
-                        <img src="img/content/instructor-4-desktop@1x.jpg" srcset="img/content/instructor-4-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Федор Кайгородов.">
+                        <img src="img/content/instructor-4-desktop@1x.jpg" srcset="img/content/instructor-4-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Инструктор Федор Кайгородов.">
                       </picture>
                     </div>
                     <div class="training-card__row-wrapper">
@@ -739,7 +753,7 @@
 
                         <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-2-mobile@1x.jpg 1x, img/content/instructor-2-mobile@2x.jpg 2x"> -->
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-2-tablet@1x.jpg 1x, img/content/instructor-2-tablet@2x.jpg 2x">
-                        <img src="img/content/instructor-2-desktop@1x.jpg" srcset="img/content/instructor-2-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Александр Прокофьев.">
+                        <img src="img/content/instructor-2-desktop@1x.jpg" srcset="img/content/instructor-2-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Инструктор Александр Прокофьев.">
                       </picture>
                     </div>
                     <div class="training-card__row-wrapper">
@@ -769,7 +783,7 @@
 
                         <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-3-mobile@1x.jpg 1x, img/content/instructor-3-mobile@2x.jpg 2x"> -->
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-3-tablet@1x.jpg 1x, img/content/instructor-3-tablet@2x.jpg 2x">
-                        <img src="img/content/instructor-3-desktop@1x.jpg" srcset="img/content/instructor-3-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Светлана Афиногенова.">
+                        <img src="img/content/instructor-3-desktop@1x.jpg" srcset="img/content/instructor-3-desktop@2x.jpg 2x" width="255" height="200 loading="lazy"" alt="Инструктор Светлана Афиногенова.">
                       </picture>
                     </div>
                     <div class="training-card__row-wrapper">
@@ -799,7 +813,7 @@
 
                         <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-1-mobile@1x.jpg 1x, img/content/instructor-1-mobile@2x.jpg 2x">
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-1-tablet@1x.jpg 1x, img/content/instructor-1-tablet@2x.jpg 2x">
-                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Надежда Колесниченко.">
+                        <img src="img/content/instructor-1-desktop@1x.jpg" srcset="img/content/instructor-1-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Инструктор Надежда Колесниченко.">
                       </picture>
                     </div>
                     <div class="training-card__row-wrapper">
@@ -829,7 +843,7 @@
 
                         <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/instructor-4-mobile@1x.jpg 1x, img/content/instructor-4-mobile@2x.jpg 2x">
                         <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/instructor-4-tablet@1x.jpg 1x, img/content/instructor-4-tablet@2x.jpg 2x"> -->
-                        <img src="img/content/instructor-4-desktop@1x.jpg" srcset="img/content/instructor-4-desktop@2x.jpg 2x" width="255" height="200" alt="Инструктор Федор Кайгородов.">
+                        <img src="img/content/instructor-4-desktop@1x.jpg" srcset="img/content/instructor-4-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Инструктор Федор Кайгородов.">
                       </picture>
                     </div>
                     <div class="training-card__row-wrapper">
@@ -869,7 +883,7 @@
             <li class="process__item">
               <div class="process__wrapper">
                 <div class="process__img-wrapper">
-                  <img src="img/svg/map.svg" width="25" height="25" alt="">
+                  <img src="img/svg/map.svg" width="25" height="25" loading="lazy" alt="">
                 </div>
                 <p class="process__text">
                   Изучение спортивного туристского движения
@@ -879,7 +893,7 @@
             <li class="process__item">
               <div class="process__wrapper">
                 <div class="process__img-wrapper">
-                  <img src="img/svg/boots.svg" width="25" height="25" alt="">
+                  <img src="img/svg/boots.svg" width="25" height="25" loading="lazy" alt="">
                 </div>
                 <p class="process__text">
                   Подготовка и техническое снаряжение в походах
@@ -889,7 +903,7 @@
             <li class="process__item">
               <div class="process__wrapper">
                 <div class="process__img-wrapper">
-                  <img src="img/svg/tree.svg" width="25" height="25" alt="">
+                  <img src="img/svg/tree.svg" width="25" height="25" loading="lazy" alt="">
                 </div>
                 <p class="process__text">
                   Лекции по окружающей среде, экологии и гигиене
@@ -899,7 +913,7 @@
             <li class="process__item">
               <div class="process__wrapper">
                 <div class="process__img-wrapper">
-                  <img src="img/svg/mountain.svg" width="25" height="25" alt="">
+                  <img src="img/svg/mountain.svg" width="25" height="25" loading="lazy" alt="">
                 </div>
                 <p class="process__text">
                   Разъяснение сложности
@@ -915,7 +929,7 @@
               <source type="image/webp" srcset="img/content/training-clouds-desktop@1x.webp 1x, img/content/training-clouds-desktop@2x.webp 2x">
 
               <source media="(max-width: 1199px)" type="image/png" srcset="img/content/training-clouds-tablet@1x.png 1x, img/content/training-clouds-tablet@2x.png 2x">
-              <img src="img/content/training-clouds-desktop@1x.png" srcset="img/content/training-clouds-desktop@2x.png 2x" width="840" height="280" alt="">
+              <img src="img/content/training-clouds-desktop@1x.png" srcset="img/content/training-clouds-desktop@2x.png 2x" width="840" height="280" loading="lazy" alt="">
             </picture>
           </div>
         </section>
@@ -928,7 +942,7 @@
 
               <source media="(max-width: 767px)" type="image/png" srcset="img/content/about-img-mobile@1x.png 1x, img/content/about-img-mobile@2x.png 2x">
               <source media="(max-width: 1199px)" type="image/png" srcset="img/content/about-img-tablet@1x.png 1x, img/content/about-img-tablet@2x.png 2x">
-              <img src="img/content/about-img-desktop@1x.png" srcset="img/content/about-img-desktop@2x.png 2x" width="808" height="470" alt="Люди в походе.">
+              <img src="img/content/about-img-desktop@1x.png" srcset="img/content/about-img-desktop@2x.png 2x" width="808" height="470" loading="lazy" alt="Люди в походе.">
             </picture>
           </div>
           <div class="about__container container">
@@ -975,7 +989,7 @@
 
                       <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/reviews-1-mobile@1x.jpg 1x, img/content/reviews-1-mobile@2x.jpg 2x">
                       <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/reviews-1-tablet@1x.jpg 1x, img/content/reviews-1-tablet@2x.jpg 2x">
-                      <img src="img/content/reviews-1-desktop@1x.jpg" srcset="img/content/reviews-1-desktop@2x.jpg 2x" width="255" height="200" alt="Отзыв от Фролова Александра.">
+                      <img src="img/content/reviews-1-desktop@1x.jpg" srcset="img/content/reviews-1-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Отзыв от Фролова Александра.">
                     </picture>
                   </div>
                   <div class="reviews-card__row-wrapper">
@@ -1006,7 +1020,7 @@
 
                       <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/reviews-2-mobile@1x.jpg 1x, img/content/reviews-2-mobile@2x.jpg 2x">
                       <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/reviews-2-tablet@1x.jpg 1x, img/content/reviews-2-tablet@2x.jpg 2x">
-                      <img src="img/content/reviews-2-desktop@1x.jpg" srcset="img/content/reviews-2-desktop@2x.jpg 2x" width="255" height="200" alt="Отзыв от Ивана Соловьева.">
+                      <img src="img/content/reviews-2-desktop@1x.jpg" srcset="img/content/reviews-2-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Отзыв от Ивана Соловьева.">
                     </picture>
                   </div>
                   <div class="reviews-card__row-wrapper">
@@ -1037,7 +1051,7 @@
 
                       <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/reviews-3-mobile@1x.jpg 1x, img/content/reviews-3-mobile@2x.jpg 2x">
                       <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/reviews-3-tablet@1x.jpg 1x, img/content/reviews-3-tablet@2x.jpg 2x">
-                      <img src="img/content/reviews-3-desktop@1x.jpg" srcset="img/content/reviews-3-desktop@2x.jpg 2x" width="255" height="200" alt="Отзыв от Евгении Баженовой.">
+                      <img src="img/content/reviews-3-desktop@1x.jpg" srcset="img/content/reviews-3-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Отзыв от Евгении Баженовой.">
                     </picture>
                   </div>
                   <div class="reviews-card__row-wrapper">
@@ -1068,7 +1082,7 @@
 
                       <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/reviews-4-mobile@1x.jpg 1x, img/content/reviews-4-mobile@2x.jpg 2x">
                       <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/reviews-4-tablet@1x.jpg 1x, img/content/reviews-4-tablet@2x.jpg 2x">
-                      <img src="img/content/reviews-4-desktop@1x.jpg" srcset="img/content/reviews-4-desktop@2x.jpg 2x" width="255" height="200" alt="Отзыв от Елены Пироговы.">
+                      <img src="img/content/reviews-4-desktop@1x.jpg" srcset="img/content/reviews-4-desktop@2x.jpg 2x" width="255" height="200" loading="lazy" alt="Отзыв от Елены Пироговы.">
                     </picture>
                   </div>
                   <div class="reviews-card__row-wrapper">
@@ -1102,7 +1116,7 @@
             <div class="advantages-swiper__wrapper swiper-wrapper" data-advantages-swiper-wrapper="">
               <div class="advantages-card swiper-slide" data-advantages-swiper-slide="">
                 <div class="advantages-card__img-wrapper">
-                  <img src="img/svg/shield.svg" width="54" height="54" alt="">
+                  <img src="img/svg/shield.svg" width="54" height="54" loading="lazy" alt="">
                 </div>
                 <div class="advantages-card__text-content">
                   <h3>
@@ -1115,7 +1129,7 @@
               </div>
               <div class="advantages-card swiper-slide" data-advantages-swiper-slide="">
                 <div class="advantages-card__img-wrapper">
-                  <img src="img/svg/crown.svg" width="54" height="54" alt="">
+                  <img src="img/svg/crown.svg" width="54" height="54" loading="lazy" alt="">
                 </div>
                 <div class="advantages-card__text-content">
                   <h3>
@@ -1128,7 +1142,7 @@
               </div>
               <div class="advantages-card swiper-slide" data-advantages-swiper-slide="">
                 <div class="advantages-card__img-wrapper">
-                  <img src="img/svg/boots-advantages.svg" width="54" height="54" alt="">
+                  <img src="img/svg/boots-advantages.svg" width="54" height="54" loading="lazy" alt="">
                 </div>
                 <div class="advantages-card__text-content">
                   <h3>
@@ -1141,7 +1155,7 @@
               </div>
               <div class="advantages-card swiper-slide" data-advantages-swiper-slide="">
                 <div class="advantages-card__img-wrapper">
-                  <img src="img/svg/path.svg" width="54" height="54" alt="">
+                  <img src="img/svg/path.svg" width="54" height="54" loading="lazy" alt="">
                 </div>
                 <div class="advantages-card__text-content">
                   <h3>
@@ -1154,7 +1168,7 @@
               </div>
               <div class="advantages-card swiper-slide" data-advantages-swiper-slide="">
                 <div class="advantages-card__img-wrapper">
-                  <img src="img/svg/leaf.svg" width="54" height="54" alt="">
+                  <img src="img/svg/leaf.svg" width="54" height="54" loading="lazy" alt="">
                 </div>
                 <div class="advantages-card__text-content">
                   <h3>
@@ -1216,7 +1230,7 @@
 
                     <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-1-mobile@1x.jpg 1x, img/content/gallery-1-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-1-tablet@1x.jpg 1x, img/content/gallery-1-tablet@2x.jpg 2x">
-                    <img src="img/content/gallery-1-desktop@1x.jpg" srcset="img/content/gallery-1-desktop@2x.jpg 2x" width="275" height="450" alt="">
+                    <img src="img/content/gallery-1-desktop@1x.jpg" srcset="img/content/gallery-1-desktop@2x.jpg 2x" width="275" height="450" loading="lazy" alt="Мужчина в горах.">
                   </picture>
                 </div>
               </div>
@@ -1229,7 +1243,7 @@
 
                     <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-2-1-mobile@1x.jpg 1x, img/content/gallery-2-1-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-2-1-tablet@1x.jpg 1x, img/content/gallery-2-1-tablet@2x.jpg 2x">
-                    <img src="img/content/gallery-2-1-desktop@1x.jpg" srcset="img/content/gallery-2-1-desktop@2x.jpg 2x" width="298" height="180" alt="">
+                    <img src="img/content/gallery-2-1-desktop@1x.jpg" srcset="img/content/gallery-2-1-desktop@2x.jpg 2x" width="298" height="180" loading="lazy" alt="Люди у костра.">
                   </picture>
                 </div>
                 <div class="gallery-card__img-wrapper">
@@ -1240,7 +1254,7 @@
 
                     <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-2-2-mobile@1x.jpg 1x, img/content/gallery-2-2-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-2-2-tablet@1x.jpg 1x, img/content/gallery-2-2-tablet@2x.jpg 2x">
-                    <img src="img/content/gallery-2-2-desktop@1x.jpg" srcset="img/content/gallery-2-2-desktop@2x.jpg 2x" width="298" height="265" alt="">
+                    <img src="img/content/gallery-2-2-desktop@1x.jpg" srcset="img/content/gallery-2-2-desktop@2x.jpg 2x" width="298" height="265" loading="lazy" alt="Рука держит компас. Задний вид - горы.">
                   </picture>
                 </div>
               </div>
@@ -1253,7 +1267,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-3-mobile@1x.jpg 1x, img/content/gallery-3-mobile@2x.jpg 2x"> -->
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-3-tablet@1x.jpg 1x, img/content/gallery-3-tablet@2x.jpg 2x">
-                    <img src="img/content/gallery-3-desktop@1x.jpg" srcset="img/content/gallery-3-desktop@2x.jpg 2x" width="275" height="450" alt="">
+                    <img src="img/content/gallery-3-desktop@1x.jpg" srcset="img/content/gallery-3-desktop@2x.jpg 2x" width="275" height="450" loading="lazy" alt="Группа людей в походе.">
                   </picture>
                 </div>
               </div>
@@ -1266,7 +1280,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-4-1-mobile@1x.jpg 1x, img/content/gallery-4-1-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-4-1-tablet@1x.jpg 1x, img/content/gallery-4-1-tablet@2x.jpg 2x"> -->
-                    <img src="img/content/gallery-4-1-desktop@1x.jpg" srcset="img/content/gallery-4-1-desktop@2x.jpg 2x" width="298" height="180" alt="">
+                    <img src="img/content/gallery-4-1-desktop@1x.jpg" srcset="img/content/gallery-4-1-desktop@2x.jpg 2x" width="298" height="180" loading="lazy" alt="Альпинисты в обмундировании в труднопроходимой местности.">
                   </picture>
                 </div>
                 <div class="gallery-card__img-wrapper">
@@ -1277,7 +1291,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-4-2-mobile@1x.jpg 1x, img/content/gallery-4-2-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-4-2-tablet@1x.jpg 1x, img/content/gallery-4-2-tablet@2x.jpg 2x"> -->
-                    <img src="img/content/gallery-4-2-desktop@1x.jpg" srcset="img/content/gallery-4-2-desktop@2x.jpg 2x" width="298" height="265" alt="">
+                    <img src="img/content/gallery-4-2-desktop@1x.jpg" srcset="img/content/gallery-4-2-desktop@2x.jpg 2x" width="298" height="265" loading="lazy" alt="Палатка на фоне ночного звездного неба.">
                   </picture>
                 </div>
               </div>
@@ -1290,7 +1304,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-5-mobile@1x.jpg 1x, img/content/gallery-5-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-5-tablet@1x.jpg 1x, img/content/gallery-5-tablet@2x.jpg 2x"> -->
-                    <img src="img/content/gallery-5-desktop@1x.jpg" srcset="img/content/gallery-5-desktop@2x.jpg 2x" width="275" height="450" alt="">
+                    <img src="img/content/gallery-5-desktop@1x.jpg" srcset="img/content/gallery-5-desktop@2x.jpg 2x" width="275" height="450" loading="lazy" alt="Два парня у затухшего костра, в лесу.">
                   </picture>
                 </div>
               </div>
@@ -1303,7 +1317,7 @@
 
                     <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-1-mobile@1x.jpg 1x, img/content/gallery-1-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-1-tablet@1x.jpg 1x, img/content/gallery-1-tablet@2x.jpg 2x">
-                    <img src="img/content/gallery-1-desktop@1x.jpg" srcset="img/content/gallery-1-desktop@2x.jpg 2x" width="275" height="450" alt="">
+                    <img src="img/content/gallery-1-desktop@1x.jpg" srcset="img/content/gallery-1-desktop@2x.jpg 2x" width="275" height="450" loading="lazy" alt="Мужчина в горах.">
                   </picture>
                 </div>
               </div>
@@ -1316,7 +1330,7 @@
 
                     <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-2-1-mobile@1x.jpg 1x, img/content/gallery-2-1-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-2-1-tablet@1x.jpg 1x, img/content/gallery-2-1-tablet@2x.jpg 2x">
-                    <img src="img/content/gallery-2-1-desktop@1x.jpg" srcset="img/content/gallery-2-1-desktop@2x.jpg 2x" width="298" height="180" alt="">
+                    <img src="img/content/gallery-2-1-desktop@1x.jpg" srcset="img/content/gallery-2-1-desktop@2x.jpg 2x" width="298" height="180" loading="lazy" alt="Люди у костра.">
                   </picture>
                 </div>
                 <div class="gallery-card__img-wrapper">
@@ -1327,7 +1341,7 @@
 
                     <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-2-2-mobile@1x.jpg 1x, img/content/gallery-2-2-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-2-2-tablet@1x.jpg 1x, img/content/gallery-2-2-tablet@2x.jpg 2x">
-                    <img src="img/content/gallery-2-2-desktop@1x.jpg" srcset="img/content/gallery-2-2-desktop@2x.jpg 2x" width="298" height="265" alt="">
+                    <img src="img/content/gallery-2-2-desktop@1x.jpg" srcset="img/content/gallery-2-2-desktop@2x.jpg 2x" width="298" height="265" loading="lazy" alt="Рука держит компас. Задний вид - горы.">
                   </picture>
                 </div>
               </div>
@@ -1340,7 +1354,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-3-mobile@1x.jpg 1x, img/content/gallery-3-mobile@2x.jpg 2x"> -->
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-3-tablet@1x.jpg 1x, img/content/gallery-3-tablet@2x.jpg 2x">
-                    <img src="img/content/gallery-3-desktop@1x.jpg" srcset="img/content/gallery-3-desktop@2x.jpg 2x" width="275" height="450" alt="">
+                    <img src="img/content/gallery-3-desktop@1x.jpg" srcset="img/content/gallery-3-desktop@2x.jpg 2x" width="275" height="450" loading="lazy" alt="Группа людей в походе.">
                   </picture>
                 </div>
               </div>
@@ -1353,7 +1367,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-4-1-mobile@1x.jpg 1x, img/content/gallery-4-1-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-4-1-tablet@1x.jpg 1x, img/content/gallery-4-1-tablet@2x.jpg 2x"> -->
-                    <img src="img/content/gallery-4-1-desktop@1x.jpg" srcset="img/content/gallery-4-1-desktop@2x.jpg 2x" width="298" height="180" alt="">
+                    <img src="img/content/gallery-4-1-desktop@1x.jpg" srcset="img/content/gallery-4-1-desktop@2x.jpg 2x" width="298" height="180" loading="lazy" alt="Альпинисты в обмундировании в труднопроходимой местности.">
                   </picture>
                 </div>
                 <div class="gallery-card__img-wrapper">
@@ -1364,7 +1378,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-4-2-mobile@1x.jpg 1x, img/content/gallery-4-2-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-4-2-tablet@1x.jpg 1x, img/content/gallery-4-2-tablet@2x.jpg 2x"> -->
-                    <img src="img/content/gallery-4-2-desktop@1x.jpg" srcset="img/content/gallery-4-2-desktop@2x.jpg 2x" width="298" height="265" alt="">
+                    <img src="img/content/gallery-4-2-desktop@1x.jpg" srcset="img/content/gallery-4-2-desktop@2x.jpg 2x" width="298" height="265" loading="lazy" alt="Палатка на фоне ночного звездного неба.">
                   </picture>
                 </div>
               </div>
@@ -1377,7 +1391,7 @@
 
                     <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/gallery-5-mobile@1x.jpg 1x, img/content/gallery-5-mobile@2x.jpg 2x">
                     <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/gallery-5-tablet@1x.jpg 1x, img/content/gallery-5-tablet@2x.jpg 2x"> -->
-                    <img src="img/content/gallery-5-desktop@1x.jpg" srcset="img/content/gallery-5-desktop@2x.jpg 2x" width="275" height="450" alt="">
+                    <img src="img/content/gallery-5-desktop@1x.jpg" srcset="img/content/gallery-5-desktop@2x.jpg 2x" width="275" height="450" loading="lazy" alt="Два парня у затухшего костра, в лесу.">
                   </picture>
                 </div>
               </div>
@@ -1393,7 +1407,7 @@
 
               <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/form-background-mobile@1x.jpg 1x, img/content/form-background-mobile@2x.jpg 2x">
               <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/form-background-tablet@1x.jpg 1x, img/content/form-background-tablet@2x.jpg 2x">
-              <img src="img/content/form-background-desktop@1x.jpg" srcset="img/content/form-background-desktop@2x.jpg 2x" width="1440" height="760" alt="">
+              <img src="img/content/form-background-desktop@1x.jpg" srcset="img/content/form-background-desktop@2x.jpg 2x" width="1440" height="760" loading="lazy" alt="">
             </picture>
           </div>
           <div class="contact-form__container container">
@@ -1440,7 +1454,7 @@
               <ul class="contacts__list list">
                 <li class="contacts__item">
                   <div class="contacts__img-wrapper">
-                    <img src="img/svg/phone.svg" width="26" height="26" alt="">
+                    <img src="img/svg/phone.svg" width="26" height="26" loading="lazy" alt="">
                   </div>
                   <dl class="contacts__contact">
                     <dt class="contacts__term">
@@ -1453,7 +1467,7 @@
                 </li>
                 <li class="contacts__item">
                   <div class="contacts__img-wrapper">
-                    <img src="img/svg/mail.svg" width="26" height="26" alt="">
+                    <img src="img/svg/mail.svg" width="26" height="26" loading="lazy" alt="">
                   </div>
                   <dl class="contacts__contact">
                     <dt class="contacts__term">
@@ -1466,7 +1480,7 @@
                 </li>
                 <li class="contacts__item">
                   <div class="contacts__img-wrapper">
-                    <img src="img/svg/contact-location.svg" width="26" height="26" alt="">
+                    <img src="img/svg/contact-location.svg" width="26" height="26" loading="lazy" alt="">
                   </div>
                   <dl class="contacts__contact">
                     <dt class="contacts__term">
@@ -1490,7 +1504,7 @@
 
               <source media="(max-width: 767px)" type="image/png" srcset="img/content/map-mobile@1x.png 1x, img/content/map-mobile@2x.png 2x">
               <source media="(max-width: 1199px)" type="image/png" srcset="img/content/map-tablet@1x.png 1x, img/content/map-tablet@2x.png 2x">
-              <img src="img/content/map-desktop@1x.png" srcset="img/content/map-desktop@2x.png 2x" width="585" height="324" alt="Место на карте: г. Москва, пр-т Мира, д. 14, офис 101.">
+              <img src="img/content/map-desktop@1x.png" srcset="img/content/map-desktop@2x.png 2x" width="585" height="324" loading="lazy" alt="Место на карте: г. Москва, пр-т Мира, д. 14, офис 101.">
             </picture>
           </div>
         </section>
