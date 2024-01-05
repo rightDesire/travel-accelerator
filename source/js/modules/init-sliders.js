@@ -110,18 +110,19 @@ const breakpointsAdvantages = {
 
 const breakpointsGallery = {
   [vpDesktop]: {
-    allowTouchMove: false,
     slidesPerView: 'auto',
     spaceBetween: 5,
   },
   [vpTablet]: {
-    allowTouchMove: true,
     slidesPerView: 'auto',
     spaceBetween: 5,
   },
-  [vpZero]: {
-    allowTouchMove: true,
+  [vpMobile]: {
     slidesPerView: 'auto',
+    spaceBetween: 3,
+  },
+  [vpZero]: {
+    slidesPerView: 2,
     spaceBetween: 3,
   },
 };

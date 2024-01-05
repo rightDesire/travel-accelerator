@@ -33,13 +33,12 @@
 
     @include vp-mobile {
       width: 158px;
+      row-gap: 3px;
     }
   }
 }
 
 .gallery-card__img-wrapper {
-  width: inherit;
-  height: inherit;
   pointer-events: none;
 }
 
@@ -47,4 +46,28 @@
   width: 100%;
   min-height: 100%;
   object-fit: cover;
+}
+
+.gallery-card--img-one .gallery-card__img-wrapper img {
+  height: 450px;
+
+  @include vp-mobile {
+    height: 260px;
+  }
+}
+
+.gallery-card--img-multiple > .gallery-card__img-wrapper:first-child img {
+  height: 180px;
+
+  @include vp-mobile {
+    height: 100px;
+  }
+}
+
+.gallery-card--img-multiple > .gallery-card__img-wrapper:last-child img {
+  height: 265px;
+
+  @include vp-mobile {
+    height: 157px;
+  }
 }
