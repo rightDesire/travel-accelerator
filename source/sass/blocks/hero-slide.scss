@@ -48,10 +48,6 @@
   @include vp-tablet {
     top: unset; // Подгон
   }
-
-  @include vp-mobile {
-    // transform: translateY();
-  }
 }
 
 .hero-slide__text-content {
