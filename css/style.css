@@ -1712,7 +1712,6 @@ button,
   display: -ms-flexbox;
   display: flex;
   width: 530px;
-  padding: 14px 0 28px;
 }
 
 .custom-input label,
@@ -5912,7 +5911,6 @@ button,
 @media screen and (max-width: 767px) {
   .custom-input,
   .custom-textarea {
-    padding: 4px 0 48px;
     width: 100%;
   }
 
