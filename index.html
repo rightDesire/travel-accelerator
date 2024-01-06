@@ -46,7 +46,7 @@
                 </svg>
               </a>
               <nav class="header__nav">
-                <ul class="header__list list" data-scroll-lock-scrollable>
+                <ul class="header__list list" data-scroll-lock-scrollable="">
                   <li class="header__item">
                     <a class="header__link" href="#">Туры</a>
                   </li>
@@ -75,7 +75,7 @@
         </header>
         <section class="hero">
           <h2 class="visually-hidden">Основные маршруты туристической компании.</h2>
-            <div class="hero-swiper swiper" data-hero-swiper="">
+            <div class="hero-swiper swiper" data-swiper="hero">
               <div class="swiper-wrapper">
                 <div class="hero-slide swiper-slide">
                   <div class="hero-slide__background-img">
@@ -109,8 +109,8 @@
                         <span class="hero-slide__detail-text">Высокая сложность</span>
                       </p>
                     </div>
-                    <div class="hero-slide__video-wrapper" data-caucasus-video-wrapper="">
-                      <div class="hero-slide__poster-wrapper" data-caucasus-poster="">
+                    <div class="hero-slide__video-wrapper" data-video-wrapper="caucasus">
+                      <div class="hero-slide__poster-wrapper" data-poster="caucasus">
                         <picture>
                           <source media="(max-width: 1199px)" type="image/webp" srcset="img/content/caucasus-poster-tablet@1x.webp 1x, img/content/caucasus-poster-tablet@2x.webp 2x">
                           <source type="image/webp" srcset="img/content/caucasus-poster-desktop@1x.webp 1x, img/content/caucasus-poster-desktop@2x.webp 2x">
@@ -118,7 +118,7 @@
                           <source media="(max-width: 1199px)" type="image/jpg" srcset="img/content/caucasus-poster-tablet@1x.jpg 1x, img/content/caucasus-poster-tablet@2x.jpg 2x">
                           <img src="img/content/caucasus-poster-desktop@1x.jpg" srcset="img/content/caucasus-poster-desktop@2x.jpg 2x" width="482" height="317" alt="Постер к видео.">
                         </picture>
-                        <button class="hero-slide__video-btn" data-caucasus-button="" type="button" aria-label="Воспроизвести.">
+                        <button class="hero-slide__video-btn" data-button="caucasus" type="button" aria-label="Воспроизвести.">
                           <span class="hero-slide__svg hero-slide__svg--default">
                             <svg width="56" height="56">
                               <use href="img/sprite.svg#icon-play" aria-hidden="true"></use>
@@ -205,14 +205,14 @@
                         <span class="hero-slide__detail-text">Легкая сложность</span>
                       </p>
                     </div>
-                    <div class="hero-slide__audio-wrapper" data-altai-audio-wrapper="">
-                      <div class="hero-slide__poster-wrapper" data-altai-poster="">
+                    <div class="hero-slide__audio-wrapper" data-audio-wrapper="altai">
+                      <div class="hero-slide__poster-wrapper" data-poster="altai">
                         <picture>
                           <source type="image/webp" srcset="img/content/altai-poster-desktop@1x.webp 1x, img/content/altai-poster-desktop@2x.webp 2x">
 
                           <img src="img/content/altai-poster-desktop@1x.jpg" srcset="img/content/altai-poster-desktop@2x.jpg 2x" width="340" height="320" loading="lazy" alt="Постер к аудио.">
                         </picture>
-                        <button class="hero-slide__audio-btn" data-altai-button="" type="button" aria-label="Воспроизвести.">
+                        <button class="hero-slide__audio-btn" data-button="altai" type="button" aria-label="Воспроизвести.">
                           <span class="hero-slide__svg hero-slide__svg--default">
                             <svg width="56" height="56">
                               <use href="img/sprite.svg#icon-play" aria-hidden="true"></use>
@@ -229,7 +229,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination hero-swiper__pagination" data-hero-pagination=""></div>
+              <div class="swiper-pagination hero-swiper__pagination" data-pagination="hero"></div>
             </div>
         </section>
       </div>
@@ -249,8 +249,8 @@
           <div class="tours__container container">
             <h2 class="tours__title shadow-title"><span>Ближайшие туры</span></h2>
             <div class="tours__wrapper">
-              <div class="tours-swiper swiper" data-tours-swiper="">
-                <div class="swiper-wrapper" data-tours-swiper-wrapper="">
+              <div class="tours-swiper swiper" data-swiper="tours">
+                <div class="swiper-wrapper" data-swiper-wrapper="tours">
                   <div class="tours-card swiper-slide">
                     <div class="tours-card__img-wrapper">
                       <picture>
@@ -589,20 +589,20 @@
                   </div>
                 </div>
               </div>
-              <div class="travel-swiper-btn tours__btn tours__btn--next swiper-button-next" data-tours-btn-next="">
+              <div class="travel-swiper-btn tours__btn tours__btn--next swiper-button-next" data-btn-next="tours">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                 </svg>
               </div>
-              <div class="travel-swiper-btn tours__btn tours__btn--prev swiper-button-prev" data-tours-btn-prev="">
+              <div class="travel-swiper-btn tours__btn tours__btn--prev swiper-button-prev" data-btn-prev="tours">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                 </svg>
               </div>
               <div class="tours__all-slides-wrapper">
-                <button class="tours__all-slides" type="button" data-all-slides-btn="">
-                  <span class="tours__all-slides-text" data-all-slides-text="">Показать все туры</span>
-                  <span class="tours__svg-wrapper" data-all-slides-icon="">
+                <button class="tours__all-slides" type="button" data-button="all-slides">
+                  <span class="tours__all-slides-text" data-text="all-slides">Показать все туры</span>
+                  <span class="tours__svg-wrapper" data-icon="all-slides">
                     <svg width="9" height="14">
                       <use href="img/sprite.svg#arrow-btn"></use>
                     </svg>
@@ -622,8 +622,8 @@
             </div>
             <h3 class="training__swiper-title"><span>Наши инструкторы</span></h3>
             <div class="training__wrapper">
-              <div class="training-swiper swiper" data-training-swiper="">
-                <div class="swiper-wrapper" data-training-swiper-wrapper="">
+              <div class="training-swiper swiper" data-swiper="training">
+                <div class="swiper-wrapper">
                   <div class="training-card swiper-slide">
                     <div class="training-card__img-wrapper">
                       <picture>
@@ -866,12 +866,12 @@
                   </div>
                 </div>
               </div>
-              <div class="travel-swiper-btn training__btn training__btn--next swiper-button-next" data-training-btn-next="">
+              <div class="travel-swiper-btn training__btn training__btn--next swiper-button-next" data-btn-next="training">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                 </svg>
               </div>
-              <div class="travel-swiper-btn training__btn training__btn--prev swiper-button-prev" data-training-btn-prev="">
+              <div class="travel-swiper-btn training__btn training__btn--prev swiper-button-prev" data-btn-prev="training">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                 </svg>
@@ -966,20 +966,20 @@
             <div class="reviews__wrapper">
               <h3 class="reviews__swiper-title shadow-title"><span>Отзывы</span></h3>
               <div class="reviews__btn-wrapper">
-                <div class="travel-swiper-btn reviews__btn reviews__btn--prev swiper-button-prev" data-reviews-btn-prev="">
+                <div class="travel-swiper-btn reviews__btn reviews__btn--prev swiper-button-prev" data-btn-prev="reviews">
                   <svg width="14" height="9">
                     <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                   </svg>
                 </div>
-                <div class="travel-swiper-btn reviews__btn reviews__btn--next swiper-button-next" data-reviews-btn-next="">
+                <div class="travel-swiper-btn reviews__btn reviews__btn--next swiper-button-next" data-btn-next="reviews">
                   <svg width="14" height="9">
                     <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                   </svg>
                 </div>
               </div>
             </div>
-            <div class="reviews-swiper swiper" data-reviews-swiper="">
-              <div class="swiper-wrapper" data-reviews-swiper-wrapper="">
+            <div class="reviews-swiper swiper" data-swiper="reviews">
+              <div class="swiper-wrapper">
                 <div class="reviews-card swiper-slide">
                   <div class="reviews-card__img-wrapper">
                     <picture>
@@ -1112,9 +1112,9 @@
           <div class="advantages__container container">
             <h2 class="advantages__title shadow-title"><span>Преимущества</span></h2>
           </div>
-          <div class="advantages-swiper swiper" data-advantages-swiper="">
-            <div class="advantages-swiper__wrapper swiper-wrapper" data-advantages-swiper-wrapper="">
-              <div class="advantages-card swiper-slide" data-advantages-swiper-slide="">
+          <div class="advantages-swiper swiper" data-swiper="advantages">
+            <div class="advantages-swiper__wrapper swiper-wrapper" data-swiper-wrapper="advantages">
+              <div class="advantages-card swiper-slide" data-swiper-slide="advantages">
                 <div class="advantages-card__img-wrapper">
                   <img src="img/svg/shield.svg" width="54" height="54" loading="lazy" alt="">
                 </div>
@@ -1127,7 +1127,7 @@
                   </p>
                 </div>
               </div>
-              <div class="advantages-card swiper-slide" data-advantages-swiper-slide="">
+              <div class="advantages-card swiper-slide" data-swiper-slide="advantages">
                 <div class="advantages-card__img-wrapper">
                   <img src="img/svg/crown.svg" width="54" height="54" loading="lazy" alt="">
                 </div>
@@ -1140,7 +1140,7 @@
                   </p>
                 </div>
               </div>
-              <div class="advantages-card swiper-slide" data-advantages-swiper-slide="">
+              <div class="advantages-card swiper-slide" data-swiper-slide="advantages">
                 <div class="advantages-card__img-wrapper">
                   <img src="img/svg/boots-advantages.svg" width="54" height="54" loading="lazy" alt="">
                 </div>
@@ -1153,7 +1153,7 @@
                   </p>
                 </div>
               </div>
-              <div class="advantages-card swiper-slide" data-advantages-swiper-slide="">
+              <div class="advantages-card swiper-slide" data-swiper-slide="advantages">
                 <div class="advantages-card__img-wrapper">
                   <img src="img/svg/path.svg" width="54" height="54" loading="lazy" alt="">
                 </div>
@@ -1166,7 +1166,7 @@
                   </p>
                 </div>
               </div>
-              <div class="advantages-card swiper-slide" data-advantages-swiper-slide="">
+              <div class="advantages-card swiper-slide" data-swiper-slide="advantages">
                 <div class="advantages-card__img-wrapper">
                   <img src="img/svg/leaf.svg" width="54" height="54" loading="lazy" alt="">
                 </div>
@@ -1183,12 +1183,12 @@
               </div>
             </div>
             <div class="advantages-swiper__btn-wrapper">
-              <div class="travel-swiper-btn advantages-swiper__btn advantages-swiper__btn--prev swiper-button-prev" data-advantages-btn-prev="">
+              <div class="travel-swiper-btn advantages-swiper__btn advantages-swiper__btn--prev swiper-button-prev" data-btn-prev="advantages">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                 </svg>
               </div>
-              <div class="travel-swiper-btn advantages-swiper__btn advantages-swiper__btn--next swiper-button-next" data-advantages-btn-next="">
+              <div class="travel-swiper-btn advantages-swiper__btn advantages-swiper__btn--next swiper-button-next" data-btn-next="advantages">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                 </svg>
@@ -1417,7 +1417,7 @@
                 Заполните форму и наш оператор свяжется с вами для консультации.
               </p>
             </div>
-            <div class="contact-form__form" data-form-validate data-callback="base">
+            <div class="contact-form__form" data-form-validate="" data-callback="base">
               <form action="https://echo.htmlacademy.ru/" method="POST">
                 <div class="contact-form__wrapper">
                   <div class="contact-form__input custom-input" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-phone-length="18"

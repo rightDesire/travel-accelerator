@@ -2774,6 +2774,10 @@ button,
   z-index: 1;
 }
 
+.hero-slide__audio-wrapper iframe {
+  border-radius: 12px;
+}
+
 .hero-slide__poster-wrapper {
   position: relative;
 }
@@ -2878,6 +2882,7 @@ button,
 
 .hero-slide__audio-btn.focus-visible:focus .hero-slide__svg--default {
   display: block;
+  color: #000000;
 }
 
 .hero-slide__audio-btn.focus-visible:focus .hero-slide__svg--hover {
@@ -6073,6 +6078,7 @@ button,
 
   .hero-slide__audio-btn:hover:not(.focus-visible) .hero-slide__svg--default {
     display: block;
+    color: #000000;
   }
 
   .hero-slide__audio-btn:hover:not(.focus-visible) .hero-slide__svg--hover {
