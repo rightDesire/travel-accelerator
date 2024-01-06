@@ -22,6 +22,10 @@ export class Burger {
     this._burger.addEventListener('click', this._onBurgerClick);
   }
 
+  _onMenuItemClick() {
+    this._closeMenu();
+  }
+
   _openMenu() {
     this._isMenuOpen = true;
     this._header.classList.add('is-open');
@@ -32,6 +36,11 @@ export class Burger {
     if (window.ls) {
       window.ls.stop();
     }
+
+    // Добавляем обработчики для пунктов меню
+    document.querySelectorAll('.header__link').forEach((link) => {
+      link.addEventListener('click', this._onMenuItemClick.bind(this));
+    });
   }
 
   _closeMenu() {

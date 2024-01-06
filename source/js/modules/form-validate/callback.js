@@ -1,4 +1,3 @@
-
 const baseSuccessCallback = (event) => {
   event.target.submit();
 };
@@ -10,7 +9,7 @@ const baseErrorCallback = (event) => {
 
 export const callbacks = {
   base: {
-    // Сбросс формы
+    // Сброс формы
     reset: true,
     // Таймаут сброса формы
     resetTimeout: 500,

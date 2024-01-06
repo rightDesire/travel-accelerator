@@ -1,8 +1,8 @@
 const initToursSlider = (isLoop, breakpointSettings) => {
-  const swiperContainer = document.querySelector('[data-tours-swiper]');
-  const swiperWrapper = swiperContainer.querySelector('[data-tours-swiper-wrapper]');
-  const swiperButtonNext = document.querySelector('[data-tours-btn-next]');
-  const swiperButtonPrev = document.querySelector('[data-tours-btn-prev]');
+  const swiperContainer = document.querySelector('[data-swiper="tours"]');
+  const swiperWrapper = swiperContainer.querySelector('[data-swiper-wrapper="tours"]');
+  const swiperButtonNext = document.querySelector('[data-btn-next="tours"]');
+  const swiperButtonPrev = document.querySelector('[data-btn-prev="tours"]');
 
   const swiperConfig = {
     loop: isLoop,
@@ -15,9 +15,9 @@ const initToursSlider = (isLoop, breakpointSettings) => {
 
   let mySwiper = new window.Swiper(swiperContainer, swiperConfig);
 
-  const showAllButton = document.querySelector('[data-all-slides-btn]');
-  const showAllButtonText = showAllButton.querySelector('[data-all-slides-text]');
-  const showAllButtonIcon = showAllButton.querySelector('[data-all-slides-icon]');
+  const showAllButton = document.querySelector('[data-button="all-slides"]');
+  const showAllButtonText = showAllButton.querySelector('[data-text="all-slides"]');
+  const showAllButtonIcon = showAllButton.querySelector('[data-icon="all-slides"]');
   let isAllShown = false;
 
   const toggleSlides = () => {

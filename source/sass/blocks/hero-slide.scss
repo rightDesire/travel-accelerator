@@ -222,6 +222,10 @@
   }
 }
 
+.hero-slide__audio-wrapper iframe {
+  border-radius: 12px;
+}
+
 .hero-slide__poster-wrapper {
   position: relative;
 }
@@ -338,6 +342,7 @@
 
     .hero-slide__svg--default {
       display: block;
+      color: $color-default-black;
     }
 
     .hero-slide__svg--hover {

@@ -7,6 +7,11 @@ export class Form {
     this._validator = new Validator();
     this._initPhoneInput = initPhoneInput;
     this._callbacks = callbacks;
+    this._formSubmitted = false;
+  }
+
+  _setFormSubmitted(value) {
+    this._formSubmitted = value;
   }
 
   _resetSelect(select) {
@@ -59,6 +64,8 @@ export class Form {
   }
 
   _onFormSubmit(event, callback = null) {
+    this._setFormSubmitted(true);
+
     if (this.validateForm(event.target) && callback) {
       this._callbacks[callback].successCallback(event);
       if (this._callbacks[callback].reset) {
@@ -75,7 +82,9 @@ export class Form {
   }
 
   _onFormInput(item) {
-    this.validateFormElement(item);
+    if (this._formSubmitted) {
+      this.validateFormElement(item);
+    }
   }
 
   _initValidate(parent) {

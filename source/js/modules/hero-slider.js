@@ -1,6 +1,6 @@
 const initHeroSlider = (isLoop, breakpointSettings, tabIndexOnSlideChange = -1) => {
-  const swiperWrapper = document.querySelector('[data-hero-swiper]');
-  const swiperPagination = document.querySelector('[data-hero-pagination]');
+  const swiperWrapper = document.querySelector('[data-swiper="hero"]');
+  const swiperPagination = document.querySelector('[data-pagination="hero"]');
 
   const swiperOptions = {
     loop: isLoop,

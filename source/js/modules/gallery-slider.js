@@ -10,6 +10,7 @@ const initGallerySlider = (isLoop, breakpointSettings) => {
       prevEl: swiperButtonPrev,
     },
     loopAddBlankSlides: true,
+    slidesPerGroup: 2,
     breakpoints: breakpointSettings,
   });
 };

@@ -1,10 +1,10 @@
 const initAdvantagesSlider = (isLoop, breakpointSettings, vpTablet) => {
   // Получаем элементы слайдера
-  const swiperContainer = document.querySelector('[data-advantages-swiper]');
-  const swiperWrapper = swiperContainer.querySelector('[data-advantages-swiper-wrapper]');
-  const swiperButtonNext = document.querySelector('[data-advantages-btn-next]');
-  const swiperButtonPrev = document.querySelector('[data-advantages-btn-prev]');
-  const swiperSlides = swiperWrapper.querySelectorAll('[data-advantages-swiper-slide]');
+  const swiperContainer = document.querySelector('[data-swiper="advantages"]');
+  const swiperWrapper = swiperContainer.querySelector('[data-swiper-wrapper="advantages"]');
+  const swiperButtonNext = document.querySelector('[data-btn-next="advantages"]');
+  const swiperButtonPrev = document.querySelector('[data-btn-prev="advantages"]');
+  const swiperSlides = swiperWrapper.querySelectorAll('[data-swiper-slide="advantages"]');
 
   // Конфигурация Swiper
   const swiperConfig = {

@@ -11,7 +11,7 @@ const vpMobile = 320;
 const vpZero = 0;
 
 const loop = {
-  hero: false, // Тестируем
+  hero: true,
   tours: false,
   training: false,
   reviews: true,
