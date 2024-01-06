@@ -23,14 +23,16 @@
   padding-bottom: 80px;
 
   @include vp-tablet {
-    justify-content: start; // Проверка
+    justify-content: start;
     padding-top: 130px;
     text-align: center;
+    padding-bottom: 28px;
   }
 
   @include vp-mobile {
     padding-top: 42px; // Подгон
     row-gap: 50px;
+    padding-bottom: 80px;
   }
 }
 
