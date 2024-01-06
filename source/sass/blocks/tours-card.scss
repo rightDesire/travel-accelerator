@@ -97,6 +97,10 @@
 .tours-card__duration-text {
   max-width: 55px;
   word-wrap: break-word;
+
+  @include vp-320 {
+    max-width: 40px;
+  }
 }
 
 .tours-card__title {
@@ -146,6 +150,10 @@
   grid-row: 1;
   max-width: 85px;
   word-wrap: break-word;
+
+  @include vp-320 {
+    max-width: 60px;
+  }
 }
 
 .tours-card__description {
@@ -157,6 +165,10 @@
   font-weight: 700;
   line-height: 13px;
   word-wrap: break-word;
+
+  @include vp-320 {
+    max-width: 60px;
+  }
 }
 
 .tours-card__description img {

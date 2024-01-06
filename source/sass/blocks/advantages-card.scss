@@ -93,6 +93,7 @@
   }
 
   @include vp-mobile {
+    max-width: 270px;
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 14px;
@@ -102,6 +103,14 @@
 .advantages-card--odd-card > .advantages-card__text-content p {
   @include vp-tablet {
     max-width: 340px;
+  }
+
+  @include vp-mobile {
+    max-width: 281px;
+  }
+
+  @include vp-320 {
+    max-width: 270px;
   }
 }
 
@@ -119,8 +128,12 @@
   }
 
   @include vp-mobile {
-    max-width: 300px;
+    max-width: 281px;
     font-size: 12px;
     line-height: 18px;
+  }
+
+  @include vp-320 {
+    max-width: 270px;
   }
 }
