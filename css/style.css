@@ -4503,6 +4503,7 @@ button,
     justify-content: start;
     padding-top: 130px;
     text-align: center;
+    padding-bottom: 28px;
   }
 
   .hero-slide__background-img img {
@@ -5275,6 +5276,7 @@ button,
   .hero-slide__wrapper {
     padding-top: 42px;
     row-gap: 50px;
+    padding-bottom: 80px;
   }
 
   .hero-slide__text-content h3 {
@@ -5701,13 +5703,18 @@ button,
   }
 
   .advantages-card__text-content h3 {
+    max-width: 270px;
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 14px;
   }
 
+  .advantages-card--odd-card > .advantages-card__text-content p {
+    max-width: 281px;
+  }
+
   .advantages-card__text-content p {
-    max-width: 300px;
+    max-width: 281px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -6003,8 +6010,28 @@ button,
     max-width: 205px;
   }
 
+  .tours-card__duration-text {
+    max-width: 40px;
+  }
+
+  .tours-card__detail {
+    max-width: 60px;
+  }
+
+  .tours-card__description {
+    max-width: 60px;
+  }
+
   .training__swiper-title span {
     max-width: 201px;
+  }
+
+  .advantages-card--odd-card > .advantages-card__text-content p {
+    max-width: 270px;
+  }
+
+  .advantages-card__text-content p {
+    max-width: 270px;
   }
 
   .contact-form__form form {
