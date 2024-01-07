@@ -2449,9 +2449,9 @@ button,
 }
 
 .header__list {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3914,9 +3914,9 @@ button,
 }
 
 .contact-form__form form {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact-form__input {
@@ -4777,6 +4777,10 @@ button,
     line-height: 25px;
   }
 
+  .about__title span {
+    max-width: 250px;
+  }
+
   .about__text-content h3 {
     margin-bottom: 11px;
     font-size: 18px;
@@ -5024,7 +5028,7 @@ button,
   }
 
   .contacts__title span {
-    max-width: 700px;
+    max-width: 650px;
   }
 
   .contacts__text-content p {
@@ -5710,11 +5714,11 @@ button,
   }
 
   .advantages-card--odd-card > .advantages-card__text-content p {
-    max-width: 281px;
+    max-width: 290px;
   }
 
   .advantages-card__text-content p {
-    max-width: 281px;
+    max-width: 290px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -5764,12 +5768,17 @@ button,
     row-gap: 8px;
   }
 
+  .contact-form__wrapper {
+    width: 100%;
+  }
+
   .contact-form__form form {
     padding: 0 15px;
   }
 
   .contact-form__input > label input {
     max-width: unset;
+    min-width: 290px;
     width: 100%;
   }
 
