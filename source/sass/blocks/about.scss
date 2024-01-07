@@ -107,6 +107,10 @@
 .about__title span {
   max-width: 290px;
   word-wrap: break-word;
+
+  @include vp-tablet {
+    max-width: 250px;
+  }
 }
 
 .about__text-content h3 {

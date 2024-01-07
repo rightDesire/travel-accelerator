@@ -123,8 +123,14 @@
   }
 }
 
+.contact-form__wrapper {
+  @include vp-mobile {
+    width: 100%;
+  }
+}
+
 .contact-form__form form {
-  justify-content: center;
+  align-items: center;
 
   @include vp-mobile {
     padding: 0 15px;
@@ -183,6 +189,7 @@
 
   @include vp-mobile {
     max-width: unset;
+    min-width: 290px;
     width: 100%;
   }
 }
