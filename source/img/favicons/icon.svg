@@ -8,6 +8,9 @@
       <circle cx="21.5" cy="21.5" r="21.5" fill="none"></circle>
     </clipPath>
   </defs>
-</svg><style>@media (prefers-color-scheme: light) { :root { filter: contrast(1) brightness(0.1); } }
-@media (prefers-color-scheme: dark) { :root { filter: contrast(0.3846153846153846) brightness(4.5); } }
-</style></svg>
+</svg>
+  <style>
+    @media (prefers-color-scheme: light) { :root { filter: contrast(1) brightness(0.1); } }
+    @media (prefers-color-scheme: dark) { :root { filter: contrast(0.3846153846153846) brightness(4.5); } }
+  </style>
+</svg>
